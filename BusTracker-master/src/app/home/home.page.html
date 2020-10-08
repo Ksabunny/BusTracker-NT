@@ -1,0 +1,23 @@
+<ion-header>
+  <ion-toolbar class="new-background-color">
+    <ion-title>
+      NT Bus Tracker
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<form >
+  <ion-item>
+    <ion-label position="floating">Source</ion-label>
+    <ion-input placeholder="Casuarina"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Destination</ion-label>
+    <ion-input placeholder="Darwin"></ion-input>
+  </ion-item>
+  <ion-button expand="full" type="submit">Bus Route</ion-button>
+</form>
+
+<ion-content padding>
+  <div #mapElement class="map"></div>
+</ion-content>

@@ -1,0 +1,2616 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/timetable_styles.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpcTQ3MXEiLCJhIjoiY2tlemthbWxjMGsxeTJ5cWNtd2s3ODg5ZyJ9.LsMtbXnNWYKEEngLgIospA';
+  </script>
+  <script src="../js/timetable-map.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Timetable generated on Sun Sep 13 2020 15:47:54 GMT+0800 (Malaysia Time) using GTFS-to-HTML version 1.0.4 -->
+  <div class="timetable-page menu-type-simple">
+    <div class="container-fluid">
+      <div class="row mt-4 mb-4">
+        <div class="col-md-12">
+          <h1 class="timetable-page-label">
+            <div class="route-color-swatch-large" style="background-color: #004C5B"></div><span>Route 5 to Darwin via Winnellie</span>
+          </h1>
+          <div class="effective-date">Effective July 8, 2016</div>
+        </div>
+      </div>
+      <div class="timetable" id="timetable_id_1769100000011" data-day-list="Sun" data-direction-name="Darwin via Winnellie" data-timetable-id="17691|0000001|1" data-direction-id="1" data-route-id="17691">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="description">Route 5 to Darwin via Winnellie | sunday</h2>
+            <div class="service-notes"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map" id="map_timetable_id_1769100000011"></div>
+          </div>
+        </div>
+        <script>
+          (function() {
+            var id = 'timetable_id_1769100000011';
+            var geojson = {
+              "type": "FeatureCollection",
+              "features": [{
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "17691",
+                  "agency_id": "1",
+                  "route_short_name": "5",
+                  "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.880432, -12.37345],
+                    [130.880386, -12.373458],
+                    [130.880248, -12.372813],
+                    [130.880183, -12.372812],
+                    [130.880188, -12.373075],
+                    [130.88036, -12.373966],
+                    [130.880364, -12.374292],
+                    [130.880236, -12.374871],
+                    [130.879616, -12.376821],
+                    [130.882133, -12.377591],
+                    [130.881637, -12.37928],
+                    [130.878783, -12.382005],
+                    [130.878012, -12.382375],
+                    [130.876689, -12.38261],
+                    [130.876786, -12.383546],
+                    [130.876737, -12.38622],
+                    [130.877718, -12.390397],
+                    [130.878268, -12.393107],
+                    [130.878271, -12.395429],
+                    [130.894741, -12.395365],
+                    [130.895395, -12.395419],
+                    [130.896002, -12.395519],
+                    [130.896609, -12.395663],
+                    [130.897206, -12.395844],
+                    [130.898095, -12.396219],
+                    [130.901702, -12.398139],
+                    [130.90768, -12.401379],
+                    [130.913316, -12.404633],
+                    [130.916346, -12.406272],
+                    [130.922504, -12.409832],
+                    [130.922541, -12.409787],
+                    [130.922643, -12.409743],
+                    [130.922754, -12.409763],
+                    [130.92279, -12.409791],
+                    [130.922836, -12.409846],
+                    [130.922853, -12.409919],
+                    [130.922824, -12.410018],
+                    [130.922768, -12.410072],
+                    [130.923029, -12.410529],
+                    [130.923153, -12.410857],
+                    [130.92324, -12.411194],
+                    [130.923291, -12.411539],
+                    [130.923355, -12.420482],
+                    [130.923324, -12.421344],
+                    [130.923324, -12.421942],
+                    [130.923415, -12.433471],
+                    [130.917706, -12.431368],
+                    [130.908207, -12.427797],
+                    [130.90646, -12.427328],
+                    [130.905283, -12.427066],
+                    [130.904087, -12.42685],
+                    [130.90289, -12.426678],
+                    [130.894465, -12.425997],
+                    [130.894318, -12.42662],
+                    [130.890516, -12.42663],
+                    [130.890523, -12.428616],
+                    [130.882375, -12.428609],
+                    [130.882376, -12.430423],
+                    [130.878528, -12.430431],
+                    [130.873498, -12.430468],
+                    [130.873066, -12.43038],
+                    [130.872475, -12.43039],
+                    [130.872465, -12.428567],
+                    [130.870564, -12.428585],
+                    [130.870548, -12.425302],
+                    [130.867778, -12.425425],
+                    [130.866926, -12.425649],
+                    [130.865599, -12.426165],
+                    [130.865089, -12.42633],
+                    [130.864487, -12.426457],
+                    [130.86383, -12.426556],
+                    [130.863119, -12.426628],
+                    [130.862283, -12.42697],
+                    [130.86036, -12.42784],
+                    [130.857424, -12.429203],
+                    [130.856958, -12.429451],
+                    [130.855909, -12.429907],
+                    [130.851309, -12.432017],
+                    [130.847155, -12.433989],
+                    [130.843348, -12.436201],
+                    [130.841602, -12.437545],
+                    [130.841319, -12.43794],
+                    [130.840898, -12.439567],
+                    [130.840739, -12.440326],
+                    [130.84078, -12.440617],
+                    [130.840859, -12.4409],
+                    [130.840966, -12.441164],
+                    [130.841253, -12.441703],
+                    [130.841412, -12.442223],
+                    [130.841408, -12.442468],
+                    [130.841366, -12.442802],
+                    [130.841046, -12.445056],
+                    [130.841007, -12.452584],
+                    [130.840769, -12.453034],
+                    [130.839683, -12.454088],
+                    [130.839148, -12.454706],
+                    [130.836243, -12.457612],
+                    [130.836279, -12.457676],
+                    [130.836259, -12.457766],
+                    [130.836175, -12.45781],
+                    [130.836129, -12.45781],
+                    [130.836083, -12.457773],
+                    [130.835212, -12.458667],
+                    [130.837659, -12.461025],
+                    [130.840742, -12.464044],
+                    [130.842071, -12.465315],
+                    [130.842471, -12.46572],
+                    [130.843427, -12.464764],
+                    [130.843982, -12.465289],
+                    [130.844404, -12.46485]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "17691",
+                  "agency_id": "1",
+                  "route_short_name": "5",
+                  "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.916346, -12.406272],
+                    [130.912837, -12.412181],
+                    [130.917183, -12.414691],
+                    [130.917458, -12.414822],
+                    [130.917742, -12.414907],
+                    [130.918028, -12.414966],
+                    [130.918323, -12.414988],
+                    [130.923306, -12.414949]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "17691",
+                  "agency_id": "1",
+                  "route_short_name": "5",
+                  "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.880183, -12.372812],
+                    [130.880183, -12.372784]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "17691",
+                  "agency_id": "1",
+                  "route_short_name": "5",
+                  "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.922824, -12.410018],
+                    [130.927399, -12.412667],
+                    [130.927684, -12.412091],
+                    [130.927354, -12.411914],
+                    [130.927573, -12.411472],
+                    [130.927922, -12.411604],
+                    [130.927399, -12.412667]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "106",
+                  "stop_code": "905",
+                  "stop_name": "M C S",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.91601, -12.407183]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "107",
+                  "stop_code": "280",
+                  "stop_name": "Berrimah Police Centre",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.923402, -12.412783]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "111",
+                  "stop_code": "288",
+                  "stop_name": "Show Grounds",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.897625, -12.426341]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "113",
+                  "stop_code": "298",
+                  "stop_name": "Winnellie Post Office",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.864521, -12.426639]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "129",
+                  "stop_code": "177",
+                  "stop_name": "Daly Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.836728, -12.457283]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "132",
+                  "stop_code": "275",
+                  "stop_name": "Northlakes Shopping Centre",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.895563, -12.395304]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "267",
+                  "stop_code": "286",
+                  "stop_name": "Berrimah Defence Centre",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.911821, -12.429308]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "268",
+                  "stop_code": "287",
+                  "stop_name": "Farrell Crescent",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.900363, -12.426543]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "280",
+                  "stop_code": "821",
+                  "stop_name": "Boulter Road - School Stop",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.916937, -12.414479]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "281",
+                  "stop_code": "820",
+                  "stop_name": "Steiner School",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.921009, -12.41489]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "291",
+                  "stop_code": "50",
+                  "stop_name": "Casuarina Senior College",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.878502, -12.38231]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "292",
+                  "stop_code": "933",
+                  "stop_name": "Casuarina Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14490",
+                    "agency_id": "1",
+                    "route_short_name": "1h",
+                    "route_long_name": "Royal Darwin Hospital, Diabetes Australia",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19858",
+                    "agency_id": "1",
+                    "route_short_name": "1",
+                    "route_long_name": "Darwin Hospital Precinct, Tiwi, Nakara",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19677",
+                    "agency_id": "1",
+                    "route_short_name": "2",
+                    "route_long_name": "Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15365",
+                    "agency_id": "1",
+                    "route_short_name": "12",
+                    "route_long_name": "Casuarina, Malak, Karama",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14740",
+                    "agency_id": "1",
+                    "route_short_name": "24",
+                    "route_long_name": "Casuarina, Wanguri, Lyons, Muirhead ",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.880432, -12.373459]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "306",
+                  "stop_code": "266",
+                  "stop_name": "Crocodylus Park",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.927876, -12.411558]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "391",
+                  "stop_code": "940",
+                  "stop_name": "Berrimah / Frost Ford",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.921366, -12.432862]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "436",
+                  "stop_code": "285",
+                  "stop_name": "Harvey Norman",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.91852, -12.431815]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "588",
+                  "stop_code": "272",
+                  "stop_name": "Mcmillans Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.879703, -12.395277]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "589",
+                  "stop_code": "273",
+                  "stop_name": "Mcmillans Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.884279, -12.39527]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "590",
+                  "stop_code": "274",
+                  "stop_name": "Mcmillans Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.890193, -12.395282]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "591",
+                  "stop_code": "276",
+                  "stop_name": "Mcmillans Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.898986, -12.396522]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "593",
+                  "stop_code": "277",
+                  "stop_name": "Mcmillans Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.906007, -12.400313]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "595",
+                  "stop_code": "278",
+                  "stop_name": "Mcmillans Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.91125, -12.40328]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "597",
+                  "stop_code": "279",
+                  "stop_name": "Op Marrara Christian School",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.917381, -12.406804]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "622",
+                  "stop_code": "178",
+                  "stop_name": "Ducks Nuts",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.837614, -12.460915]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "623",
+                  "stop_code": "179",
+                  "stop_name": "Hilton Hotel",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.841827, -12.464976]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "699",
+                  "stop_code": "269",
+                  "stop_name": "Rothdale Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.877586, -12.389343]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "700",
+                  "stop_code": "268",
+                  "stop_name": "Rothdale Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.87685, -12.386095]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "701",
+                  "stop_code": "270",
+                  "stop_name": "Rothdale Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.878012, -12.391136]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "702",
+                  "stop_code": "271",
+                  "stop_name": "Rothdale Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.878393, -12.394016]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "732",
+                  "stop_code": "175",
+                  "stop_name": "Westralia Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.841202, -12.444487]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "734",
+                  "stop_code": "176",
+                  "stop_name": "Kerry Mazda",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.841134, -12.449647]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "774",
+                  "stop_code": "283",
+                  "stop_name": "Vanderlin Drive (Berrimah)",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.923548, -12.431287]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "777",
+                  "stop_code": "281",
+                  "stop_name": "P C Y C",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.923387, -12.415731]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "778",
+                  "stop_code": "282",
+                  "stop_name": "Horse Stables",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.923407, -12.421943]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "795",
+                  "stop_code": "293",
+                  "stop_name": "Coonawarra Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.880318, -12.430448]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "796",
+                  "stop_code": "294",
+                  "stop_name": "Coonawarra Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.876451, -12.430465]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "798",
+                  "stop_code": "295",
+                  "stop_name": "Sweet Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.872399, -12.429273]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "799",
+                  "stop_code": "296",
+                  "stop_name": "Hickman Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.870512, -12.427714]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "801",
+                  "stop_code": "297",
+                  "stop_name": "Leprechaun Motel",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.868977, -12.42546]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "803",
+                  "stop_code": "299",
+                  "stop_name": "Op Shiers Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.859679, -12.428302]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "814",
+                  "stop_code": "289",
+                  "stop_name": "Winnellie Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.893357, -12.426706]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "816",
+                  "stop_code": "290",
+                  "stop_name": "Albatross Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.889877, -12.428679]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "817",
+                  "stop_code": "291",
+                  "stop_name": "Kokoda Industries",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.886093, -12.42868]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "820",
+                  "stop_code": "292",
+                  "stop_name": "Catterthun Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.882432, -12.429752]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "822",
+                  "stop_code": "173",
+                  "stop_name": "Woolner Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.847516, -12.433913]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "83",
+                  "stop_code": "1",
+                  "stop_name": "Darwin Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19963",
+                    "agency_id": "1",
+                    "route_short_name": "7",
+                    "route_long_name": "Darwin Stuart Park  Bayview",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.84434, -12.464786]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "90",
+                  "stop_code": "49",
+                  "stop_name": "Trower Road / Limmens Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.880643, -12.3804]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "96",
+                  "stop_code": "174",
+                  "stop_name": "Parap Road - Stuart Highway",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.843172, -12.436843]
+                }
+              }]
+            };
+            var routeColor = '#' + '004C5B';
+            createMap(id, geojson, routeColor);
+          })();
+        </script>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-container">
+              <table class="table table-vertical" summary="This table shows schedules for a selection of key stops on the route for Route 5 to Darwin via Winnellie Sun. Stops and their schedule times are listed in the columns." data-orientation="vertical">
+                <caption class="sr-only">Route 5 to Darwin via Winnellie | Sun</caption>
+                <colgroup></colgroup>
+                <thead>
+                  <tr></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row timetable-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

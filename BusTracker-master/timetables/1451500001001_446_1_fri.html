@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/timetable_styles.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpcTQ3MXEiLCJhIjoiY2tlemthbWxjMGsxeTJ5cWNtd2s3ODg5ZyJ9.LsMtbXnNWYKEEngLgIospA';
+  </script>
+  <script src="../js/timetable-map.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Timetable generated on Sun Sep 13 2020 15:47:10 GMT+0800 (Malaysia Time) using GTFS-to-HTML version 1.0.4 -->
+  <div class="timetable-page menu-type-simple">
+    <div class="container-fluid">
+      <div class="row mt-4 mb-4">
+        <div class="col-md-12">
+          <h1 class="timetable-page-label">
+            <div class="route-color-swatch-large" style="background-color: #004C5B"></div><span>Route 446 to Bees Creek and Palmerston</span>
+          </h1>
+          <div class="effective-date">Effective July 8, 2016</div>
+        </div>
+      </div>
+      <div class="timetable" id="timetable_id_1451500001001" data-day-list="Fri" data-direction-name="Bees Creek  and Palmerston" data-timetable-id="14515|0000100|1" data-direction-id="1" data-route-id="14515">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="description">Route 446 to Bees Creek and Palmerston | friday</h2>
+            <div class="service-notes"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map" id="map_timetable_id_1451500001001"></div>
+          </div>
+        </div>
+        <script>
+          (function() {
+            var id = 'timetable_id_1451500001001';
+            var geojson = {
+              "type": "FeatureCollection",
+              "features": [{
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "14515",
+                  "agency_id": "1",
+                  "route_short_name": "446",
+                  "route_long_name": "Bees Creek Palmerston",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.071343, -12.584067],
+                    [131.059032, -12.584094],
+                    [131.059049, -12.571457],
+                    [131.059038, -12.55482],
+                    [131.054642, -12.554852],
+                    [131.051493, -12.554847],
+                    [131.051346, -12.554826],
+                    [131.04454, -12.554835],
+                    [131.043995, -12.554864],
+                    [131.042646, -12.554873],
+                    [131.042407, -12.554843],
+                    [131.038362, -12.554843],
+                    [131.038371, -12.551523],
+                    [131.038532, -12.548559],
+                    [131.038534, -12.546445],
+                    [131.035856, -12.546455],
+                    [131.033166, -12.547335],
+                    [131.032664, -12.547591],
+                    [131.032307, -12.548022],
+                    [131.032169, -12.548664],
+                    [131.032161, -12.550569],
+                    [131.029271, -12.550539],
+                    [131.029262, -12.540561],
+                    [131.029296, -12.525594],
+                    [131.029259, -12.516305],
+                    [131.029273, -12.515289],
+                    [131.027479, -12.51482],
+                    [131.026074, -12.514303],
+                    [131.024837, -12.513624],
+                    [131.023402, -12.512597],
+                    [131.022208, -12.511475],
+                    [131.021204, -12.51001],
+                    [131.020047, -12.508271],
+                    [131.019136, -12.506762],
+                    [131.014053, -12.497894],
+                    [131.013227, -12.496242],
+                    [131.011993, -12.494102],
+                    [131.011354, -12.491581],
+                    [131.011075, -12.489736],
+                    [131.010909, -12.489072],
+                    [131.010697, -12.488416],
+                    [131.010448, -12.487768],
+                    [131.01017, -12.487139],
+                    [131.009946, -12.486691],
+                    [131.009684, -12.48627],
+                    [131.009376, -12.485885],
+                    [131.007056, -12.483486],
+                    [131.006418, -12.48287],
+                    [131.005734, -12.482289],
+                    [131.005277, -12.481957],
+                    [131.004848, -12.481597],
+                    [131.004448, -12.481201],
+                    [131.004085, -12.480779],
+                    [130.999119, -12.475542],
+                    [130.998636, -12.4751],
+                    [130.996939, -12.473707],
+                    [130.996036, -12.474892],
+                    [130.995764, -12.475197],
+                    [130.995464, -12.475474],
+                    [130.995129, -12.475714],
+                    [130.994775, -12.475909],
+                    [130.990111, -12.478076],
+                    [130.989748, -12.478298],
+                    [130.989403, -12.478538],
+                    [130.989076, -12.478806],
+                    [130.988496, -12.479342],
+                    [130.986851, -12.477515],
+                    [130.986085, -12.478184],
+                    [130.98635, -12.478369],
+                    [130.986516, -12.478363],
+                    [130.986657, -12.478183],
+                    [130.986787, -12.478176],
+                    [130.986951, -12.478323],
+                    [130.987441, -12.478892],
+                    [130.98743, -12.479001]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "119",
+                  "stop_code": "903",
+                  "stop_name": "Palmerston Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15896",
+                    "agency_id": "1",
+                    "route_short_name": "76",
+                    "route_long_name": "Palmerston Bakewell Rosebery Bellamack Moulden Driver",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25575",
+                    "agency_id": "1",
+                    "route_short_name": "78",
+                    "route_long_name": "Palmerston Kokoda Industries",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25800",
+                    "agency_id": "1",
+                    "route_short_name": "87",
+                    "route_long_name": "Palmerston Durack Heights",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25815",
+                    "agency_id": "1",
+                    "route_short_name": "88",
+                    "route_long_name": "Palmerston Palmerston Regional Hospital",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23694",
+                    "agency_id": "1",
+                    "route_short_name": "450",
+                    "route_long_name": "Humpty Doo Girraween Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.987475, -12.479083]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "229",
+                  "stop_code": "511",
+                  "stop_name": "Bees Creek Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.058915, -12.583204]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "230",
+                  "stop_code": "509",
+                  "stop_name": "Bees Creek Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.059092, -12.562278]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "231",
+                  "stop_code": "508",
+                  "stop_name": "London Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.038093, -12.554241]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "232",
+                  "stop_code": "766",
+                  "stop_name": "London Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.038217, -12.550668]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "233",
+                  "stop_code": "767",
+                  "stop_name": "Francesca Circuit",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.035234, -12.546737]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "234",
+                  "stop_code": "768",
+                  "stop_name": "Jacomb Place",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.031088, -12.550645]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "235",
+                  "stop_code": "513",
+                  "stop_name": "Virginia Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.02919, -12.541793]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "236",
+                  "stop_code": "514",
+                  "stop_name": "Virginia Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.029172, -12.521873]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "237",
+                  "stop_code": "763",
+                  "stop_name": "Virginia Store",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.029154, -12.517909]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "238",
+                  "stop_code": "776",
+                  "stop_name": "Stuart / Virginia",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.028644, -12.515417]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "420",
+                  "stop_code": "510",
+                  "stop_name": "Gulnare Rd",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.071342, -12.584158]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "537",
+                  "stop_code": "512",
+                  "stop_name": "Lowther Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.046958, -12.554904]
+                }
+              }]
+            };
+            var routeColor = '#' + '004C5B';
+            createMap(id, geojson, routeColor);
+          })();
+        </script>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-container">
+              <table class="table table-vertical" summary="This table shows schedules for a selection of key stops on the route for Route 446 to Bees Creek  and Palmerston Fri. Stops and their schedule times are listed in the columns." data-orientation="vertical">
+                <caption class="sr-only">Route 446 to Bees Creek and Palmerston | Fri</caption>
+                <colgroup></colgroup>
+                <thead>
+                  <tr></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row timetable-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

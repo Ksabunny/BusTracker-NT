@@ -1,0 +1,1534 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/timetable_styles.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpcTQ3MXEiLCJhIjoiY2tlemthbWxjMGsxeTJ5cWNtd2s3ODg5ZyJ9.LsMtbXnNWYKEEngLgIospA';
+  </script>
+  <script src="../js/timetable-map.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Timetable generated on Sun Sep 13 2020 15:47:22 GMT+0800 (Malaysia Time) using GTFS-to-HTML version 1.0.4 -->
+  <div class="timetable-page menu-type-simple">
+    <div class="container-fluid">
+      <div class="row mt-4 mb-4">
+        <div class="col-md-12">
+          <h1 class="timetable-page-label">
+            <div class="route-color-swatch-large" style="background-color: #004C5B"></div><span>Route 74 to Farrar, Johnston and Zuccoli</span>
+          </h1>
+          <div class="effective-date">Effective July 8, 2016</div>
+        </div>
+      </div>
+      <div class="timetable" id="timetable_id_1610400000101" data-day-list="Sat" data-direction-name=" Farrar, Johnston and Zuccoli" data-timetable-id="16104|0000010|1" data-direction-id="1" data-route-id="16104">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="description">Route 74 to Farrar, Johnston and Zuccoli | saturday</h2>
+            <div class="service-notes"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map" id="map_timetable_id_1610400000101"></div>
+          </div>
+        </div>
+        <script>
+          (function() {
+            var id = 'timetable_id_1610400000101';
+            var geojson = {
+              "type": "FeatureCollection",
+              "features": [{
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.987365, -12.479073],
+                    [130.98729, -12.479153],
+                    [130.987206, -12.47917],
+                    [130.987142, -12.479133],
+                    [130.986533, -12.478454],
+                    [130.986516, -12.478363],
+                    [130.98635, -12.478369],
+                    [130.98633, -12.478469],
+                    [130.987048, -12.479259],
+                    [130.987288, -12.47928],
+                    [130.987851, -12.479887],
+                    [130.988496, -12.479342],
+                    [130.989076, -12.478806],
+                    [130.989403, -12.478538],
+                    [130.989748, -12.478298],
+                    [130.990111, -12.478076],
+                    [130.990492, -12.477891],
+                    [130.992731, -12.47686],
+                    [130.992901, -12.477235],
+                    [130.993163, -12.477664],
+                    [130.993645, -12.47817],
+                    [130.99498, -12.479068],
+                    [130.996648, -12.479871],
+                    [130.997208, -12.480123],
+                    [130.997603, -12.480219],
+                    [130.997991, -12.480188],
+                    [131.001137, -12.479696],
+                    [131.001506, -12.479683],
+                    [131.00169, -12.479722],
+                    [131.001865, -12.479788],
+                    [131.00233, -12.480175],
+                    [131.002439, -12.480322],
+                    [131.002529, -12.480486],
+                    [131.002582, -12.480659],
+                    [131.002616, -12.480841],
+                    [131.002623, -12.481022],
+                    [131.002602, -12.481195],
+                    [131.002563, -12.48133],
+                    [131.002477, -12.481556],
+                    [131.002268, -12.481943],
+                    [131.002211, -12.482078],
+                    [131.002161, -12.482322],
+                    [131.002148, -12.483928],
+                    [131.002363, -12.484393],
+                    [131.002561, -12.484759],
+                    [131.002587, -12.484895],
+                    [131.002583, -12.485784],
+                    [131.00302, -12.486905],
+                    [131.004907, -12.488546],
+                    [131.005284, -12.489957],
+                    [131.005268, -12.490437],
+                    [131.005404, -12.491972],
+                    [131.00587, -12.493602],
+                    [131.006031, -12.493994],
+                    [131.006363, -12.494661],
+                    [131.006619, -12.495517],
+                    [131.006701, -12.496198],
+                    [131.006593, -12.497312],
+                    [131.006313, -12.49817],
+                    [131.006057, -12.498666],
+                    [131.005903, -12.499144],
+                    [131.005849, -12.49967],
+                    [131.005863, -12.500024],
+                    [131.005888, -12.500196],
+                    [131.006038, -12.500706],
+                    [131.006353, -12.501273],
+                    [131.006768, -12.503292],
+                    [131.006829, -12.503484],
+                    [131.006919, -12.503666],
+                    [131.007046, -12.503822],
+                    [131.007201, -12.503951],
+                    [131.007302, -12.504007],
+                    [131.007358, -12.503999],
+                    [131.007459, -12.504018],
+                    [131.007587, -12.50412],
+                    [131.007614, -12.504175],
+                    [131.007631, -12.504275],
+                    [131.007611, -12.504356],
+                    [131.007858, -12.50455],
+                    [131.00803, -12.504761],
+                    [131.008138, -12.504962],
+                    [131.008239, -12.505],
+                    [131.008285, -12.505036],
+                    [131.008321, -12.505082],
+                    [131.008357, -12.505173],
+                    [131.008355, -12.505273],
+                    [131.008289, -12.505399],
+                    [131.008301, -12.506506],
+                    [131.008018, -12.508906],
+                    [131.007619, -12.510343],
+                    [131.007665, -12.510398],
+                    [131.007663, -12.510525],
+                    [131.007597, -12.510596],
+                    [131.007542, -12.510614],
+                    [131.007512, -12.510759],
+                    [131.007428, -12.511501],
+                    [131.007473, -12.512191],
+                    [131.007702, -12.512974],
+                    [131.008053, -12.51365],
+                    [131.008161, -12.513806],
+                    [131.008216, -12.513825],
+                    [131.008262, -12.513871],
+                    [131.00828, -12.513917],
+                    [131.008279, -12.51398],
+                    [131.00826, -12.514043],
+                    [131.008204, -12.514088],
+                    [131.008139, -12.51406],
+                    [131.008103, -12.514023],
+                    [131.008076, -12.51395],
+                    [131.008086, -12.513878],
+                    [131.008161, -12.513806]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.007473, -12.512191],
+                    [131.007428, -12.511501]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.007542, -12.510614],
+                    [131.007487, -12.51055],
+                    [131.007479, -12.510459],
+                    [131.007545, -12.51036],
+                    [131.007619, -12.510343]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.008289, -12.505399],
+                    [131.008188, -12.505362],
+                    [131.008097, -12.505261],
+                    [131.00807, -12.505188],
+                    [131.008072, -12.505088],
+                    [131.008138, -12.504962],
+                    [131.00803, -12.504761]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.007611, -12.504356],
+                    [131.007556, -12.504364],
+                    [131.007454, -12.504345],
+                    [131.007336, -12.504253],
+                    [131.007283, -12.504089],
+                    [131.007302, -12.504007]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.006829, -12.503484],
+                    [131.006768, -12.503292]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.005903, -12.499144],
+                    [131.006057, -12.498666]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.006593, -12.497312],
+                    [131.006701, -12.496198]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.00587, -12.493602],
+                    [131.005421, -12.492036]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.005404, -12.491972],
+                    [131.005268, -12.490437]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.005284, -12.489957],
+                    [131.004907, -12.488546],
+                    [131.00302, -12.486905],
+                    [131.002583, -12.485784]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.002561, -12.484759],
+                    [131.002363, -12.484393]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.002148, -12.483928],
+                    [131.002159, -12.482486]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.002623, -12.481022],
+                    [131.002616, -12.480841]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.001137, -12.479696],
+                    [130.999462, -12.479964]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.996648, -12.479871],
+                    [130.99509, -12.479124]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.994824, -12.478975],
+                    [130.993645, -12.47817]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.992731, -12.47686],
+                    [130.99118, -12.477574]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.989748, -12.478298],
+                    [130.989403, -12.478538]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.988496, -12.479342],
+                    [130.986851, -12.477515],
+                    [130.986085, -12.478184],
+                    [130.98635, -12.478369]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16104",
+                  "agency_id": "1",
+                  "route_short_name": "74",
+                  "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.986516, -12.478363],
+                    [130.986657, -12.478183],
+                    [130.986787, -12.478176],
+                    [130.986951, -12.478323],
+                    [130.987441, -12.478892],
+                    [130.98743, -12.479001]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "119",
+                  "stop_code": "903",
+                  "stop_name": "Palmerston Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15896",
+                    "agency_id": "1",
+                    "route_short_name": "76",
+                    "route_long_name": "Palmerston Bakewell Rosebery Bellamack Moulden Driver",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25575",
+                    "agency_id": "1",
+                    "route_short_name": "78",
+                    "route_long_name": "Palmerston Kokoda Industries",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25800",
+                    "agency_id": "1",
+                    "route_short_name": "87",
+                    "route_long_name": "Palmerston Durack Heights",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25815",
+                    "agency_id": "1",
+                    "route_short_name": "88",
+                    "route_long_name": "Palmerston Palmerston Regional Hospital",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23694",
+                    "agency_id": "1",
+                    "route_short_name": "450",
+                    "route_long_name": "Humpty Doo Girraween Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.987475, -12.479083]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "380",
+                  "stop_code": "378",
+                  "stop_name": "Terrace Gardens",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.99379, -12.478344]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "381",
+                  "stop_code": "377",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.996188, -12.479792]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "382",
+                  "stop_code": "375",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.002088, -12.482938]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "383",
+                  "stop_code": "376",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.000839, -12.479846]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "384",
+                  "stop_code": "1511",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.995961, -12.479489]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "385",
+                  "stop_code": "1512",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.00249, -12.484522]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "386",
+                  "stop_code": "1513",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.004417, -12.487977]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "387",
+                  "stop_code": "1519",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.994185, -12.478486]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "388",
+                  "stop_code": "1520",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.001912, -12.479743]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "485",
+                  "stop_code": "834",
+                  "stop_name": "Zuccoli Parade",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.008196, -12.504808]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "486",
+                  "stop_code": "818",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.006002, -12.498683]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "487",
+                  "stop_code": "819",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.005975, -12.494002]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "488",
+                  "stop_code": "847",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.004912, -12.488899]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "489",
+                  "stop_code": "1514",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.005917, -12.493548]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "490",
+                  "stop_code": "1515",
+                  "stop_name": "Farrar Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.006682, -12.496878]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "660",
+                  "stop_code": "925",
+                  "stop_name": "Palmerston Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15896",
+                    "agency_id": "1",
+                    "route_short_name": "76",
+                    "route_long_name": "Palmerston Bakewell Rosebery Bellamack Moulden Driver",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25575",
+                    "agency_id": "1",
+                    "route_short_name": "78",
+                    "route_long_name": "Palmerston Kokoda Industries",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25800",
+                    "agency_id": "1",
+                    "route_short_name": "87",
+                    "route_long_name": "Palmerston Durack Heights",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25815",
+                    "agency_id": "1",
+                    "route_short_name": "88",
+                    "route_long_name": "Palmerston Palmerston Regional Hospital",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23694",
+                    "agency_id": "1",
+                    "route_short_name": "450",
+                    "route_long_name": "Humpty Doo Girraween Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.98741, -12.479119]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "839",
+                  "stop_code": "835",
+                  "stop_name": "Zuccoli Parade",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.006692, -12.503427]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "840",
+                  "stop_code": "1516",
+                  "stop_name": "Zuccoli Schools",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.007306, -12.511627]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "841",
+                  "stop_code": "1521",
+                  "stop_name": "Zuccoli Parade",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.007518, -12.511648]
+                }
+              }]
+            };
+            var routeColor = '#' + '004C5B';
+            createMap(id, geojson, routeColor);
+          })();
+        </script>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-container">
+              <table class="table table-vertical" summary="This table shows schedules for a selection of key stops on the route for Route 74 to  Farrar, Johnston and Zuccoli Sat. Stops and their schedule times are listed in the columns." data-orientation="vertical">
+                <caption class="sr-only">Route 74 to Farrar, Johnston and Zuccoli | Sat</caption>
+                <colgroup></colgroup>
+                <thead>
+                  <tr></tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row timetable-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

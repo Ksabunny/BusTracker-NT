@@ -1,0 +1,109 @@
+route_id,direction_name,service_id,monday,tuesday,wednesday,thursday,friday,saturday,sunday,start_date,end_date,exception_type,timetable_id
+12726,Orbital 2,4,1,1,1,1,1,0,0,20200629,20201129,2,0
+12726,Orbital 2,4,1,1,1,1,1,0,0,20200629,20201129,2,1
+13095,Orbital 1,4,1,1,1,1,1,0,0,20200629,20201129,2,2
+13095,Orbital 1,4,1,1,1,1,1,0,0,20200629,20201129,2,3
+13468,"Casuarina, Alawa, Jingili, Moil, Anula",1,0,0,0,0,0,0,1,20200629,20201129,1,4
+13468,"Casuarina, Alawa, Jingili, Moil, Anula",1,0,0,0,0,0,0,1,20200629,20201129,1,5
+13468,"Casuarina, Alawa, Jingili, Moil, Anula",1,0,0,0,0,0,0,1,20200629,20201129,1,6
+13468,"Casuarina, Alawa, Jingili, Moil, Anula",1,0,0,0,0,0,0,1,20200629,20201129,1,7
+14490,"Royal Darwin Hospital, Diabetes Australia",4,1,1,1,1,1,0,0,20200629,20201129,2,8
+14490,"Royal Darwin Hospital, Diabetes Australia",4,1,1,1,1,1,0,0,20200629,20201129,2,9
+14515,Bees Creek Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,10
+14515,Bees Creek Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,11
+14608,Karama Darwin Semi Express,4,1,1,1,1,1,0,0,20200629,20201129,2,12
+14608,Karama Darwin Semi Express,4,1,1,1,1,1,0,0,20200629,20201129,2,13
+14740,"Casuarina, Wanguri, Lyons, Muirhead ",1,0,0,0,0,0,0,1,20200629,20201129,1,14
+14740,"Casuarina, Wanguri, Lyons, Muirhead ",1,0,0,0,0,0,0,1,20200629,20201129,1,15
+14740,"Casuarina, Wanguri, Lyons, Muirhead ",4,1,1,1,1,1,0,0,20200629,20201129,2,16
+14740,"Casuarina, Wanguri, Lyons, Muirhead ",4,1,1,1,1,1,0,0,20200629,20201129,2,17
+14867,Leanyer Darwin Semi Express,4,1,1,1,1,1,0,0,20200629,20201129,2,18
+14867,Leanyer Darwin Semi Express,4,1,1,1,1,1,0,0,20200629,20201129,2,19
+14950,Hospital Precinct Darwin Semi Express,4,1,1,1,1,1,0,0,20200629,20201129,2,20
+14950,Hospital Precinct Darwin Semi Express,4,1,1,1,1,1,0,0,20200629,20201129,2,21
+15260,"Darwin, Cullen Bay and Waterfront",1,0,0,0,0,0,0,1,20200629,20201129,1,22
+15260,"Darwin, Cullen Bay and Waterfront",1,0,0,0,0,0,0,1,20200629,20201129,1,23
+15260,"Darwin, Cullen Bay and Waterfront",4,1,1,1,1,1,0,0,20200629,20201129,2,24
+15260,"Darwin, Cullen Bay and Waterfront",4,1,1,1,1,1,0,0,20200629,20201129,2,25
+15365,"Casuarina, Malak, Karama",1,0,0,0,0,0,0,1,20200629,20201129,1,26
+15365,"Casuarina, Malak, Karama",1,0,0,0,0,0,0,1,20200629,20201129,1,27
+15365,"Casuarina, Malak, Karama",4,1,1,1,1,1,0,0,20200629,20201129,2,28
+15365,"Casuarina, Malak, Karama",4,1,1,1,1,1,0,0,20200629,20201129,2,29
+15542,Palmerston Indigenous Village Rosebery Bellamack,1,0,0,0,0,0,0,1,20200629,20201129,1,30
+15542,Palmerston Indigenous Village Rosebery Bellamack,1,0,0,0,0,0,0,1,20200629,20201129,1,31
+15542,Palmerston Indigenous Village Rosebery Bellamack,4,1,1,1,1,1,0,0,20200629,20201129,2,32
+15542,Palmerston Indigenous Village Rosebery Bellamack,4,1,1,1,1,1,0,0,20200629,20201129,2,33
+15731,"Millner, Rapid Creek, Alawa",4,1,1,1,1,1,0,0,20200629,20201129,2,34
+15731,"Millner, Rapid Creek, Alawa",4,1,1,1,1,1,0,0,20200629,20201129,2,35
+15896,Palmerston Bakewell Rosebery Bellamack Moulden Driver,4,1,1,1,1,1,0,0,20200629,20201129,2,36
+15896,Palmerston Bakewell Rosebery Bellamack Moulden Driver,4,1,1,1,1,1,0,0,20200629,20201129,2,37
+15925,Casuarina Darwin Via Bagot Rd,1,0,0,0,0,0,0,1,20200629,20201129,1,38
+15925,Casuarina Darwin Via Bagot Rd,1,0,0,0,0,0,0,1,20200629,20201129,1,39
+15925,Casuarina Darwin Via Bagot Rd,4,1,1,1,1,1,0,0,20200629,20201129,2,40
+15925,Casuarina Darwin Via Bagot Rd,4,1,1,1,1,1,0,0,20200629,20201129,2,41
+16104,Palmerston Farrar Johnston Zuccoli,1,0,0,0,0,0,0,1,20200629,20201129,1,42
+16104,Palmerston Farrar Johnston Zuccoli,1,0,0,0,0,0,0,1,20200629,20201129,1,43
+16104,Palmerston Farrar Johnston Zuccoli,4,1,1,1,1,1,0,0,20200629,20201129,2,44
+16104,Palmerston Farrar Johnston Zuccoli,4,1,1,1,1,1,0,0,20200629,20201129,2,45
+16299,Palmerston Durack CDU Palmerston,1,0,0,0,0,0,0,1,20200629,20201129,1,46
+16299,Palmerston Durack CDU Palmerston,1,0,0,0,0,0,0,1,20200629,20201129,1,47
+16299,Palmerston Durack CDU Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,48
+16299,Palmerston Durack CDU Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,49
+16426,Humpty Doo Coolalinga Darwin Semi Express ,4,1,1,1,1,1,0,0,20200629,20201129,2,50
+16426,Humpty Doo Coolalinga Darwin Semi Express ,4,1,1,1,1,1,0,0,20200629,20201129,2,51
+16515,Palmerston Gunn Bakewell Rosebery,1,0,0,0,0,0,0,1,20200629,20201129,1,52
+16515,Palmerston Gunn Bakewell Rosebery,1,0,0,0,0,0,0,1,20200629,20201129,1,53
+16515,Palmerston Gunn Bakewell Rosebery,4,1,1,1,1,1,0,0,20200629,20201129,2,54
+16515,Palmerston Gunn Bakewell Rosebery,4,1,1,1,1,1,0,0,20200629,20201129,2,55
+16660,Palmerston Driver Moulden,1,0,0,0,0,0,0,1,20200629,20201129,1,56
+16660,Palmerston Driver Moulden,1,0,0,0,0,0,0,1,20200629,20201129,1,57
+16660,Palmerston Driver Moulden,4,1,1,1,1,1,0,0,20200629,20201129,2,58
+16660,Palmerston Driver Moulden,4,1,1,1,1,1,0,0,20200629,20201129,2,59
+16803,Palmerston Berrimah Karama Casuarina,1,0,0,0,0,0,0,1,20200629,20201129,1,60
+16803,Palmerston Berrimah Karama Casuarina,1,0,0,0,0,0,0,1,20200629,20201129,1,61
+16803,Palmerston Berrimah Karama Casuarina,4,1,1,1,1,1,0,0,20200629,20201129,2,62
+16803,Palmerston Berrimah Karama Casuarina,4,1,1,1,1,1,0,0,20200629,20201129,2,63
+17198,Palmerston Darwin Via Stuart Highway,1,0,0,0,0,0,0,1,20200629,20201129,1,64
+17198,Palmerston Darwin Via Stuart Highway,1,0,0,0,0,0,0,1,20200629,20201129,1,65
+17198,Palmerston Darwin Via Stuart Highway,4,1,1,1,1,1,0,0,20200629,20201129,2,66
+17198,Palmerston Darwin Via Stuart Highway,4,1,1,1,1,1,0,0,20200629,20201129,2,67
+17691,Casuarina  Marrara  Berrimah Winnellie Darwin,4,1,1,1,1,1,0,0,20200629,20201129,2,68
+17691,Casuarina  Marrara  Berrimah Winnellie Darwin,4,1,1,1,1,1,0,0,20200629,20201129,2,69
+18408,Casuarina  Darwin Via CDU & Nightcliff,1,0,0,0,0,0,0,1,20200629,20201129,1,70
+18408,Casuarina  Darwin Via CDU & Nightcliff,1,0,0,0,0,0,0,1,20200629,20201129,1,71
+18408,Casuarina  Darwin Via CDU & Nightcliff,4,1,1,1,1,1,0,0,20200629,20201129,2,72
+18408,Casuarina  Darwin Via CDU & Nightcliff,4,1,1,1,1,1,0,0,20200629,20201129,2,73
+19677,"Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",1,0,0,0,0,0,0,1,20200629,20201129,1,74
+19677,"Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",1,0,0,0,0,0,0,1,20200629,20201129,1,75
+19677,"Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",4,1,1,1,1,1,0,0,20200629,20201129,2,76
+19677,"Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",4,1,1,1,1,1,0,0,20200629,20201129,2,77
+19858,"Darwin Hospital Precinct, Tiwi, Nakara",1,0,0,0,0,0,0,1,20200629,20201129,1,78
+19858,"Darwin Hospital Precinct, Tiwi, Nakara",1,0,0,0,0,0,0,1,20200629,20201129,1,79
+19858,"Darwin Hospital Precinct, Tiwi, Nakara",4,1,1,1,1,1,0,0,20200629,20201129,2,80
+19858,"Darwin Hospital Precinct, Tiwi, Nakara",4,1,1,1,1,1,0,0,20200629,20201129,2,81
+19963,Darwin Stuart Park  Bayview,4,1,1,1,1,1,0,0,20200629,20201129,2,82
+19963,Darwin Stuart Park  Bayview,4,1,1,1,1,1,0,0,20200629,20201129,2,83
+20520,Darwin Museum  Fannie Bay Parap,4,1,1,1,1,1,0,0,20200629,20201129,2,84
+20520,Darwin Museum  Fannie Bay Parap,4,1,1,1,1,1,0,0,20200629,20201129,2,85
+20903,Palmerston Woodroffe Gray,1,0,0,0,0,0,0,1,20200629,20201129,1,86
+20903,Palmerston Woodroffe Gray,1,0,0,0,0,0,0,1,20200629,20201129,1,87
+20903,Palmerston Woodroffe Gray,4,1,1,1,1,1,0,0,20200629,20201129,2,88
+20903,Palmerston Woodroffe Gray,4,1,1,1,1,1,0,0,20200629,20201129,2,89
+23253,"Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",4,1,1,1,1,1,0,0,20200629,20201129,2,90
+23253,"Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",4,1,1,1,1,1,0,0,20200629,20201129,2,91
+23446,Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,92
+23446,Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,93
+23605,Humpty Doo Mcminns Lagoon Howard Springs Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,94
+23605,Humpty Doo Mcminns Lagoon Howard Springs Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,95
+23694,Humpty Doo Girraween Howard Springs Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,96
+23694,Humpty Doo Girraween Howard Springs Palmerston,4,1,1,1,1,1,0,0,20200629,20201129,2,97
+25575,Palmerston Kokoda Industries ,1,0,0,0,0,0,0,1,20200629,20201129,1,98
+25575,Palmerston Kokoda Industries ,1,0,0,0,0,0,0,1,20200629,20201129,1,99
+25800,Palmerston Durack Heights,1,0,0,0,0,0,0,1,20200629,20201129,1,100
+25800,Palmerston Durack Heights,1,0,0,0,0,0,0,1,20200629,20201129,1,101
+25800,Palmerston Durack Heights,4,1,1,1,1,1,0,0,20200629,20201129,2,102
+25800,Palmerston Durack Heights,4,1,1,1,1,1,0,0,20200629,20201129,2,103
+25815,Palmerston Palmerston Regional Hospital,1,0,0,0,0,0,0,1,20200629,20201129,1,104
+25815,Palmerston Palmerston Regional Hospital,1,0,0,0,0,0,0,1,20200629,20201129,1,105
+25815,Palmerston Palmerston Regional Hospital,4,1,1,1,1,1,0,0,20200629,20201129,2,106
+25815,Palmerston Palmerston Regional Hospital,4,1,1,1,1,1,0,0,20200629,20201129,2,107

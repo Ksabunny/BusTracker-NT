@@ -1,0 +1,2119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/timetable_styles.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpcTQ3MXEiLCJhIjoiY2tlemthbWxjMGsxeTJ5cWNtd2s3ODg5ZyJ9.LsMtbXnNWYKEEngLgIospA';
+  </script>
+  <script src="../js/timetable-map.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Timetable generated on Sun Sep 13 2020 15:47:28 GMT+0800 (Malaysia Time) using GTFS-to-HTML version 1.0.4 -->
+  <div class="timetable-page menu-type-simple">
+    <div class="container-fluid">
+      <div class="row mt-4 mb-4">
+        <div class="col-md-12">
+          <h1 class="timetable-page-label">
+            <div class="route-color-swatch-large" style="background-color: #D60007"></div><span>Route 28 to Darwin Semi Express</span>
+          </h1>
+          <div class="effective-date">Effective July 8, 2016</div>
+        </div>
+      </div>
+      <div class="timetable" id="timetable_id_1642611111001" data-day-list="Mon-Fri" data-direction-name="Darwin Semi Express" data-timetable-id="16426|1111100|1" data-direction-id="1" data-route-id="16426">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="description">Route 28 to Darwin Semi Express | monday-friday</h2>
+            <div class="service-notes"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map" id="map_timetable_id_1642611111001"></div>
+          </div>
+        </div>
+        <script>
+          (function() {
+            var id = 'timetable_id_1642611111001';
+            var geojson = {
+              "type": "FeatureCollection",
+              "features": [{
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16426",
+                  "agency_id": "1",
+                  "route_short_name": "28",
+                  "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#D60007",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.100508, -12.576758],
+                    [131.100188, -12.576499],
+                    [131.101972, -12.574337],
+                    [131.101616, -12.574042],
+                    [131.101406, -12.573839],
+                    [131.101234, -12.57361],
+                    [131.101099, -12.573354],
+                    [131.101001, -12.57309],
+                    [131.100958, -12.572799],
+                    [131.100953, -12.572518],
+                    [131.100994, -12.572228],
+                    [131.101176, -12.571732],
+                    [131.078217, -12.566377],
+                    [131.07401, -12.565405],
+                    [131.073365, -12.56527],
+                    [131.073372, -12.564744],
+                    [131.073152, -12.563943],
+                    [131.072969, -12.563151],
+                    [131.072575, -12.561604],
+                    [131.071559, -12.558887],
+                    [131.06877, -12.554895],
+                    [131.064132, -12.548347],
+                    [131.058752, -12.54071],
+                    [131.055318, -12.536682],
+                    [131.048216, -12.528732],
+                    [131.046081, -12.526218],
+                    [131.045442, -12.52572],
+                    [131.044272, -12.524879],
+                    [131.04447, -12.524564],
+                    [131.04461, -12.524457],
+                    [131.044805, -12.524369],
+                    [131.044991, -12.524308],
+                    [131.045176, -12.524283],
+                    [131.045379, -12.524295],
+                    [131.045303, -12.524439],
+                    [131.045281, -12.524693],
+                    [131.045343, -12.524848],
+                    [131.045498, -12.525004],
+                    [131.046194, -12.525421],
+                    [131.046304, -12.525459],
+                    [131.046507, -12.525462],
+                    [131.046628, -12.525427],
+                    [131.046731, -12.525329],
+                    [131.046835, -12.52514],
+                    [131.046941, -12.524833],
+                    [131.04594, -12.524429],
+                    [131.045425, -12.524295],
+                    [131.045379, -12.524295]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16426",
+                  "agency_id": "1",
+                  "route_short_name": "28",
+                  "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#D60007",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [131.044272, -12.524879],
+                    [131.035915, -12.518979],
+                    [131.032943, -12.516935],
+                    [131.03222, -12.516472],
+                    [131.031138, -12.515967],
+                    [131.029273, -12.515289],
+                    [131.027479, -12.51482],
+                    [131.026074, -12.514303],
+                    [131.024837, -12.513624],
+                    [131.023402, -12.512597],
+                    [131.022208, -12.511475],
+                    [131.021204, -12.51001],
+                    [131.020047, -12.508271],
+                    [131.019136, -12.506762],
+                    [131.014053, -12.497894],
+                    [131.013227, -12.496242],
+                    [131.011993, -12.494102],
+                    [131.011354, -12.491581],
+                    [131.011075, -12.489736],
+                    [131.010909, -12.489072],
+                    [131.010697, -12.488416],
+                    [131.010448, -12.487768],
+                    [131.01017, -12.487139],
+                    [131.009946, -12.486691],
+                    [131.009684, -12.48627],
+                    [131.009376, -12.485885],
+                    [131.007056, -12.483486],
+                    [131.006418, -12.48287],
+                    [131.005734, -12.482289],
+                    [131.005277, -12.481957],
+                    [131.004848, -12.481597],
+                    [131.004448, -12.481201],
+                    [131.004085, -12.480779],
+                    [130.999119, -12.475542],
+                    [130.998636, -12.4751],
+                    [130.996939, -12.473707],
+                    [130.996036, -12.474892],
+                    [130.995764, -12.475197],
+                    [130.995464, -12.475474],
+                    [130.995129, -12.475714],
+                    [130.994775, -12.475909],
+                    [130.990111, -12.478076],
+                    [130.989748, -12.478298],
+                    [130.989403, -12.478538],
+                    [130.989076, -12.478806],
+                    [130.988496, -12.479342],
+                    [130.986851, -12.477515],
+                    [130.986085, -12.478184],
+                    [130.98635, -12.478369],
+                    [130.986516, -12.478363],
+                    [130.986657, -12.478183],
+                    [130.986787, -12.478176],
+                    [130.986951, -12.478323],
+                    [130.987441, -12.478892],
+                    [130.98743, -12.479001],
+                    [130.98729, -12.479153],
+                    [130.987206, -12.47917],
+                    [130.987142, -12.479133],
+                    [130.986533, -12.478454],
+                    [130.986516, -12.478363]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16426",
+                  "agency_id": "1",
+                  "route_short_name": "28",
+                  "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#D60007",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.986195, -12.478267],
+                    [130.986085, -12.478184],
+                    [130.986197, -12.478077]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16426",
+                  "agency_id": "1",
+                  "route_short_name": "28",
+                  "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#D60007",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.986851, -12.477515],
+                    [130.985416, -12.475862],
+                    [130.9801, -12.469975],
+                    [130.979582, -12.469442],
+                    [130.97638, -12.466786],
+                    [130.974009, -12.465393],
+                    [130.972717, -12.464795],
+                    [130.97054, -12.464012],
+                    [130.968658, -12.46394],
+                    [130.966923, -12.463989],
+                    [130.965147, -12.464209],
+                    [130.962552, -12.4643],
+                    [130.959836, -12.463882],
+                    [130.957943, -12.463293],
+                    [130.957273, -12.463012],
+                    [130.951746, -12.459688],
+                    [130.945916, -12.456922],
+                    [130.94298, -12.45573],
+                    [130.939651, -12.454286],
+                    [130.935996, -12.453038],
+                    [130.931935, -12.45173],
+                    [130.931063, -12.4514],
+                    [130.92964, -12.450918],
+                    [130.927922, -12.450376],
+                    [130.926928, -12.450181],
+                    [130.926071, -12.450097],
+                    [130.924807, -12.45007],
+                    [130.923508, -12.449934],
+                    [130.922723, -12.449941],
+                    [130.922253, -12.449916],
+                    [130.921783, -12.449846],
+                    [130.921323, -12.449722],
+                    [130.920883, -12.449561],
+                    [130.920452, -12.449346],
+                    [130.920059, -12.449096],
+                    [130.919685, -12.44881],
+                    [130.919348, -12.448487],
+                    [130.919039, -12.448129],
+                    [130.918777, -12.447736],
+                    [130.917516, -12.445659],
+                    [130.917227, -12.44522],
+                    [130.916901, -12.444807],
+                    [130.916556, -12.444412],
+                    [130.9159, -12.443813],
+                    [130.913774, -12.442151],
+                    [130.913189, -12.441725],
+                    [130.912568, -12.441327],
+                    [130.911927, -12.440973],
+                    [130.911267, -12.440664],
+                    [130.910588, -12.440392],
+                    [130.90989, -12.440164],
+                    [130.909182, -12.439973],
+                    [130.908464, -12.439836],
+                    [130.905169, -12.439299],
+                    [130.904469, -12.439162],
+                    [130.90378, -12.43898],
+                    [130.903109, -12.438762],
+                    [130.902448, -12.438508],
+                    [130.901807, -12.4382],
+                    [130.901184, -12.437864],
+                    [130.90059, -12.437484],
+                    [130.900015, -12.437077],
+                    [130.89704, -12.434785],
+                    [130.89641, -12.434341],
+                    [130.895761, -12.433933],
+                    [130.895083, -12.433569],
+                    [130.894377, -12.43326],
+                    [130.893652, -12.432987],
+                    [130.892917, -12.432768],
+                    [130.892163, -12.432594],
+                    [130.891399, -12.432465],
+                    [130.890579, -12.432381],
+                    [130.889979, -12.432363],
+                    [130.872989, -12.432447],
+                    [130.868385, -12.432417],
+                    [130.862542, -12.432479],
+                    [130.861794, -12.432522],
+                    [130.861073, -12.43263],
+                    [130.860305, -12.432791],
+                    [130.859452, -12.43306],
+                    [130.857373, -12.433837],
+                    [130.854022, -12.43514],
+                    [130.85367, -12.435262],
+                    [130.853103, -12.435535],
+                    [130.852544, -12.435854],
+                    [130.852022, -12.436209],
+                    [130.851527, -12.43661],
+                    [130.851068, -12.437048],
+                    [130.850646, -12.437513],
+                    [130.85026, -12.438015],
+                    [130.849911, -12.438545],
+                    [130.849616, -12.439104],
+                    [130.849358, -12.43968],
+                    [130.849147, -12.440276],
+                    [130.84899, -12.440881],
+                    [130.848879, -12.441496],
+                    [130.848813, -12.442239],
+                    [130.848806, -12.442683],
+                    [130.848827, -12.443128],
+                    [130.849023, -12.444854],
+                    [130.849101, -12.445771],
+                    [130.849139, -12.446352],
+                    [130.849123, -12.446815],
+                    [130.849072, -12.447131],
+                    [130.848933, -12.447783],
+                    [130.848775, -12.448442],
+                    [130.848357, -12.449851],
+                    [130.848316, -12.450141],
+                    [130.848068, -12.45128],
+                    [130.847932, -12.451741],
+                    [130.847732, -12.452155],
+                    [130.847552, -12.452443],
+                    [130.847364, -12.452676],
+                    [130.847199, -12.452628],
+                    [130.846691, -12.45263],
+                    [130.845148, -12.452734],
+                    [130.843587, -12.452875],
+                    [130.843109, -12.452714],
+                    [130.842032, -12.451311],
+                    [130.841389, -12.4517],
+                    [130.84102, -12.451695],
+                    [130.841007, -12.452584],
+                    [130.840769, -12.453034],
+                    [130.839683, -12.454088],
+                    [130.839148, -12.454706],
+                    [130.836243, -12.457612],
+                    [130.836279, -12.457676],
+                    [130.836259, -12.457766],
+                    [130.836175, -12.45781],
+                    [130.836129, -12.45781],
+                    [130.836083, -12.457773],
+                    [130.835212, -12.458667],
+                    [130.837659, -12.461025],
+                    [130.840742, -12.464044],
+                    [130.842071, -12.465315],
+                    [130.842471, -12.46572],
+                    [130.843427, -12.464764],
+                    [130.843982, -12.465289],
+                    [130.844404, -12.46485]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "129",
+                  "stop_code": "177",
+                  "stop_name": "Daly Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.836728, -12.457283]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "299",
+                  "stop_code": "815",
+                  "stop_name": "Coolalinga Park & Ride",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.046269, -12.525332]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "438",
+                  "stop_code": "788",
+                  "stop_name": "Arnhem Highway / Hayball Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.087402, -12.568648]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "454",
+                  "stop_code": "588",
+                  "stop_name": "Humpty Doo Park & Ride",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23694",
+                    "agency_id": "1",
+                    "route_short_name": "450",
+                    "route_long_name": "Humpty Doo Girraween Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [131.100479, -12.576785]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "622",
+                  "stop_code": "178",
+                  "stop_name": "Ducks Nuts",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.837614, -12.460915]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "623",
+                  "stop_code": "179",
+                  "stop_name": "Hilton Hotel",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.841827, -12.464976]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "660",
+                  "stop_code": "925",
+                  "stop_name": "Palmerston Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15896",
+                    "agency_id": "1",
+                    "route_short_name": "76",
+                    "route_long_name": "Palmerston Bakewell Rosebery Bellamack Moulden Driver",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25575",
+                    "agency_id": "1",
+                    "route_short_name": "78",
+                    "route_long_name": "Palmerston Kokoda Industries",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25800",
+                    "agency_id": "1",
+                    "route_short_name": "87",
+                    "route_long_name": "Palmerston Durack Heights",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25815",
+                    "agency_id": "1",
+                    "route_short_name": "88",
+                    "route_long_name": "Palmerston Palmerston Regional Hospital",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23694",
+                    "agency_id": "1",
+                    "route_short_name": "450",
+                    "route_long_name": "Humpty Doo Girraween Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.98741, -12.479119]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "83",
+                  "stop_code": "1",
+                  "stop_name": "Darwin Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19963",
+                    "agency_id": "1",
+                    "route_short_name": "7",
+                    "route_long_name": "Darwin Stuart Park  Bayview",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.84434, -12.464786]
+                }
+              }]
+            };
+            var routeColor = '#' + 'D60007';
+            createMap(id, geojson, routeColor);
+          })();
+        </script>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-container">
+              <table class="table table-vertical" summary="This table shows schedules for a selection of key stops on the route for Route 28 to Darwin Semi Express Mon-Fri. Stops and their schedule times are listed in the columns." data-orientation="vertical">
+                <caption class="sr-only">Route 28 to Darwin Semi Express | Mon-Fri</caption>
+                <colgroup>
+                  <col class="stop-0" id="stop_id_312" data-stop-id="312">
+                  <col class="stop-1" id="stop_id_293" data-stop-id="293">
+                  <col class="stop-2" id="stop_id_294" data-stop-id="294">
+                  <col class="stop-3" id="stop_id_733" data-stop-id="733">
+                  <col class="stop-4" id="stop_id_102" data-stop-id="102">
+                  <col class="stop-5" id="stop_id_731" data-stop-id="731">
+                  <col class="stop-6" id="stop_id_84" data-stop-id="84">
+                  <col class="stop-7" id="stop_id_706" data-stop-id="706">
+                  <col class="stop-8" id="stop_id_117" data-stop-id="117">
+                  <col class="stop-9" id="stop_id_658" data-stop-id="658">
+                  <col class="stop-10" id="stop_id_119" data-stop-id="119">
+                  <col class="stop-11" id="stop_id_112" data-stop-id="112">
+                  <col class="stop-12" id="stop_id_157" data-stop-id="157">
+                  <col class="stop-13" id="stop_id_289" data-stop-id="289">
+                  <col class="stop-14" id="stop_id_636" data-stop-id="636">
+                  <col class="stop-15" id="stop_id_822" data-stop-id="822">
+                  <col class="stop-16" id="stop_id_96" data-stop-id="96">
+                  <col class="stop-17" id="stop_id_732" data-stop-id="732">
+                  <col class="stop-18" id="stop_id_734" data-stop-id="734">
+                  <col class="stop-19" id="stop_id_129" data-stop-id="129">
+                  <col class="stop-20" id="stop_id_622" data-stop-id="622">
+                  <col class="stop-21" id="stop_id_623" data-stop-id="623">
+                  <col class="stop-22" id="stop_id_312" data-stop-id="312">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Darwin Interchange</div>
+                    <div class="stop-code">69</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Woolworths Smith St</div>
+                    <div class="stop-code">70</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">St Marys Smith St</div>
+                    <div class="stop-code">72</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Stuart Park</div>
+                    <div class="stop-code">103</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">St Johns College</div>
+                    <div class="stop-code">104</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Nylander Street</div>
+                    <div class="stop-code">105</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Parap Rd</div>
+                    <div class="stop-code">106</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Ross Smith Avenue</div>
+                    <div class="stop-code">107</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Berrimah</div>
+                    <div class="stop-code">195</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Gateway Shopping Centre</div>
+                    <div class="stop-code">337</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Palmerston Interchange</div>
+                    <div class="stop-code">903</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Op Gateway Shopping Centre</div>
+                    <div class="stop-code">385</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Karama Shops</div>
+                    <div class="stop-code">130</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Casuarina Interchange Bay 'B'</div>
+                    <div class="stop-code">569</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Progress Drive Shops - Nightcliff</div>
+                    <div class="stop-code">86</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Woolner Road</div>
+                    <div class="stop-code">173</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Parap Road - Stuart Highway</div>
+                    <div class="stop-code">174</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Westralia Street</div>
+                    <div class="stop-code">175</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Kerry Mazda</div>
+                    <div class="stop-code">176</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Daly Street</div>
+                    <div class="stop-code">177</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Ducks Nuts</div>
+                    <div class="stop-code">178</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Hilton Hotel</div>
+                    <div class="stop-code">179</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Darwin Interchange</div>
+                    <div class="stop-code">69</div>
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="trip-row" id="trip_id_69378">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">6:28am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69410">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">6:58am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69442">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">7:04am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69474">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">7:52am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69502">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">8:27am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69534">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">9:07am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69566">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">9:30am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69598">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">10:12am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69630">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">10:37am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69662">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">11:18am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69694">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">12:11pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69726">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">12:36pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69758">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">1:16pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69790">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">2:02pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69822">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">2:58pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69850">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">3:27pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69882">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">3:57pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69914">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">4:13pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69946">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">4:37pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_69978">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">4:52pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70010">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">5:17pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70042">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">5:37pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70074">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">5:59pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70106">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">6:28pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70138">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">7:02pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70170">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">7:46pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70202">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">8:41pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70234">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">9:19pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_70266">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">9:51pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row timetable-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

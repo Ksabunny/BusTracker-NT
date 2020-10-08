@@ -1,0 +1,53 @@
+.new-background-color{
+	--background: #fc7703;
+  }
+.titleTxt{
+  font-size: 2rem;
+}
+.sideMenu{
+  margin-top: 3rem;
+  padding-left: 10px;
+}
+
+.routeList{
+  margin-top: 2rem;
+  padding-left: 10px;
+}
+.sideBtn{
+    font-size: 2rem;
+    padding: .5rem;
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.closeBtn{
+  color: #f0f0f0;
+  border-radius: 10% ;
+  border: .1rem none solid;
+  width: 2.5rem;
+  height:2.5rem;
+  padding: .5rem;
+  cursor: pointer;
+  position: absolute;
+  right: .9rem;
+  top: 0.8rem;
+}
+
+.ion-sideBtn{
+  position: absolute;
+
+}
+  .aside{
+    position: absolute;
+    transform: translateX(-30rem);
+    width:20rem;
+    background-color: #f0f0f0;
+    z-index: 4;
+    height: 100%;
+  }
+
+  .aside.open{
+    transform: translateX(0);
+}

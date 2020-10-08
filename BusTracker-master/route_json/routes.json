@@ -1,0 +1,1005 @@
+[
+    {
+		"href" : "timetables\\2369400000011_450_1_sun.html",
+        "name": "Route 450 to Girraween Howard Springs and Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2369400001001_450_1_fri.html",
+        "name": "Route 450 to Girraween Howard Springs and Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2369400000101_450_1_sat.html",
+        "name": "Route 450 to Girraween Howard Springs and Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2369411111001_450_1_mon-fri.html",
+        "name": "Route 450 to Girraween Howard Springs and Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2369400000010_450_0_sun.html",
+        "name": "Route 450 to Humpty Doo Park And Ride",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2369400001000_450_0_fri.html",
+        "name": "Route 450 to Humpty Doo Park And Ride",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2369400000100_450_0_sat.html",
+        "name": "Route 450 to Humpty Doo Park And Ride",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2369411111000_450_0_mon-fri.html",
+        "name": "Route 450 to Humpty Doo Park And Ride",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2360500000011_447_1_sun.html",
+        "name": "Route 447 to McMinns Lagoon Howard Springs and Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2360500001001_447_1_fri.html",
+        "name": "Route 447 to McMinns Lagoon Howard Springs and Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2360500000101_447_1_sat.html",
+        "name": "Route 447 to McMinns Lagoon Howard Springs and Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2360511111001_447_1_mon-fri.html",
+        "name": "Route 447 to McMinns Lagoon Howard Springs and Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2360500000010_447_0_sun.html",
+        "name": "Route 447 to Humpty Doo Park And Ride",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2360500000010_447_0_sun.html",
+        "name": "Route 447 to Humpty Doo Park And Ride",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2360500001000_447_0_fri.html",
+        "name": "Route 447 to Humpty Doo Park And Ride",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2360511111000_447_0_mon-fri.html",
+        "name": "Route 447 to Humpty Doo Park And Ride",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1451500000011_446_1_sun.html",
+        "name": "Route 446 to Bees Creek and Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1451500001001_446_1_fri.html",
+        "name": "Route 446 to Bees Creek and Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1451500000101_446_1_sat.html",
+        "name": "Route 446 to Bees Creek and Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1451511111001_446_1_mon-fri.html",
+        "name": "Route 446 to Bees Creek and Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1451500000010_446_0_sun.html",
+        "name": "Route 446 to Bees Creek",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1451500001000_446_0_fri.html",
+        "name": "Route 446 to Bees Creek",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1451500000100_446_0_sat.html",
+        "name": "Route 446 to Bees Creek",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1451511111000_446_0_mon-fri.html",
+        "name": "Route 446 to Bees Creek",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2344600000011_445_1_sun.html",
+        "name": "Route 445 to Cox Peninsula Rd Noonamah Coolalinga and Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2344600001001_445_1_fri.html",
+        "name": "Route 445 to Cox Peninsula Rd Noonamah Coolalinga and Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2344600000101_445_1_sat.html",
+        "name": "Route 445 to Cox Peninsula Rd Noonamah Coolalinga and Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2344611111001_445_1_mon-fri.html",
+        "name": "Route 445 to Cox Peninsula Rd Noonamah Coolalinga and Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2344600000010_445_0_sun.html",
+        "name": "Route 445 to Humpty Doo Park and Ride",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2344600001000_445_0_fri.html",
+        "name": "Route 445 to Humpty Doo Park and Ride",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2344600000100_445_0_sat.html",
+        "name": "Route 445 to Humpty Doo Park and Ride",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2344611111000_445_0_mon-fri.html.html",
+        "name": "Route 445 to Humpty Doo Park and Ride",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2325300000011_440_1_sun.html",
+        "name": "Route 440 to Coolalinga Virginia Noonamah and Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2325300001001_440_1_fri.html",
+        "name": "Route 440 to Coolalinga Virginia Noonamah and Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2325300000101_440_1_sat.html",
+        "name": "Route 440 to Coolalinga Virginia Noonamah and Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2325311111001_440_1_mon.html",
+        "name": "Route 440 to Coolalinga Virginia Noonamah and Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2581500000011_88_1_sun.html",
+        "name": "Route 88 to Palmerston Hospital",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2581500001001_88_1_fri.html",
+        "name": "Route 88 to Palmerston Hospital",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2581500000101_88_1_sat.html",
+        "name": "Route 88 to Palmerston Hospital",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2581511111001_88_1_mon.html",
+        "name": "Route 88 to Palmerston Hospital",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2580000000011_87_1_sun.html",
+        "name": "RRoute 87 to Durack Heights",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2580000001001_87_1_fri.html",
+        "name": "RRoute 87 to Durack Heights",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2580000000101_87_1_sat.html",
+        "name": "RRoute 87 to Durack Heights",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2580011111001_87_1_mon-fri.html",
+        "name": "RRoute 87 to Durack Heights",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2557500000011_78_1_sun.html",
+        "name": "Route 78 to Kokoda Industries",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2557500001001_78_1_fri.html",
+        "name": "Route 78 to Kokoda Industries",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2557500000101_78_1_sat.html",
+        "name": "Route 78 to Kokoda Industries",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2557511111001_78_1_mon-fri.html",
+        "name": "Route 78 to Kokoda Industries",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1554200000011_77_1_sun.html",
+        "name": "Route 77 to Indigenous Village Rosebery and Bellamack",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1554200001001_77_1_fri.html",
+        "name": "Route 77 to Indigenous Village Rosebery and Bellamack",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1554200000101_77_1_sat.html",
+        "name": "Route 77 to Indigenous Village Rosebery and Bellamack",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1554211111001_77_1_mon-fri.html.html",
+        "name": "Route 77 to Indigenous Village Rosebery and Bellamack",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1589600000011_76_1_sun.html",
+        "name": "Route 76 to Bakewell Rosebery Bellamack Moulden and Driver",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1589600001001_76_1_fri.html",
+        "name": "Route 76 to Bakewell Rosebery Bellamack Moulden and Driver",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1589600000101_76_1_sat.html",
+        "name": "Route 76 to Bakewell Rosebery Bellamack Moulden and Driver",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1589611111001_76_1_mon-fri.html",
+        "name": "Route 76 to Bakewell Rosebery Bellamack Moulden and Driver",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1610400000011_74_1_sun.html",
+        "name": "Route 74 to Farrar, Johnston and Zuccoli",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1610400001001_74_1_fri.html",
+        "name": "Route 74 to Farrar, Johnston and Zuccoli",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1610400000101_74_1_sat.html",
+        "name": "Route 74 to Farrar, Johnston and Zuccoli",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1610411111001_74_1_mon-fri.html",
+        "name": "Route 74 to Farrar, Johnston and Zuccoli",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1629900000011_73_1_sun.html",
+        "name": "Route 73 to Durack and CDU Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1629900001001_73_1_fri.html",
+        "name": "Route 73 to Durack and CDU Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1629900000101_73_1_sat.html",
+        "name": "Route 73 to Durack and CDU Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1629911111001_73_1_mon.html",
+        "name": "Route 73 to Durack and CDU Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1651500000011_72_1_sun.html",
+        "name": "Route 72 to Gunn Bakewell and Rosebery",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1651500001001_72_1_fri.html",
+        "name": "Route 72 to Gunn Bakewell and Rosebery",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1651500000101_72_1_sat.html",
+        "name": "Route 72 to Gunn Bakewell and Rosebery",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1651511111001_72_1_mon-fri.html",
+        "name": "Route 72 to Gunn Bakewell and Rosebery",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2090300000011_71_1_sun.html",
+        "name": "Route 71 to Woodroffe and Gray",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2090300001001_71_1_fri.html",
+        "name": "Route 71 to Woodroffe and Gray",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2090300000101_71_1_sat.html",
+        "name": "Route 71 to Woodroffe and Gray",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2090311111001_71_1_mon-fri.html",
+        "name": "Route 71 to Woodroffe and Gray",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1666000000011_70_1_sun.html",
+        "name": "Route 70 to Driver and Moulden",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1666000001001_70_1_fri.html",
+        "name": "Route 70 to Driver and Moulden",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1666000000101_70_1_sat.html",
+        "name": "Route 70 to Driver and Moulden",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1666011111001_70_1_mon-fri.html",
+        "name": "Route 70 to Driver and Moulden",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1642600000011_28_1_sun.html",
+        "name": "Route 28 to Darwin Semi Express",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1642600001001_28_1_fri.html",
+        "name": "Route 28 to Darwin Semi Express",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1642600000101_28_1_sat.html",
+        "name": "Route 28 to Darwin Semi Express",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1642611111001_28_1_mon-fri.html",
+        "name": "Route 28 to Darwin Semi Express",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1642600000010_28_0_sun.html",
+        "name": "Route 28 to Humpty Doo Park and Ride Express",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1642600001000_28_0_fri.html",
+        "name": "Route 28 to Humpty Doo Park and Ride Express",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1642600000100_28_0_sat.html",
+        "name": "Route 28 to Humpty Doo Park and Ride Express",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1642611111000_28_0_mon-fri.html",
+        "name": "Route 28 to Humpty Doo Park and Ride Express",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1460800000011_25_1_sun.html",
+        "name": "Route 25 to Darwin Semi Express",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1460800001001_25_1_fri.html",
+        "name": "Route 25 to Darwin Semi Express",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1460800000101_25_1_sat.html",
+        "name": "Route 25 to Darwin Semi Express",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1460811111001_25_1_mon-fri.html",
+        "name": "Route 25 to Darwin Semi Express",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1460800000010_25_0_sun.html",
+        "name": "Route 25 to Karama Semi Express",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1460800001000_25_0_fri.html",
+        "name": "Route 25 to Karama Semi Express",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1460800000100_25_0_sat.html",
+        "name": "Route 25 to Karama Semi Express",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1460811111000_25_0_mon-fri.html",
+        "name": "Route 25 to Karama Semi Express",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1474000000011_24_1_sun.html",
+        "name": "Route 24 to Wanguri Lyons and Muirhead",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1474000001001_24_1_fri.html",
+        "name": "Route 24 to Wanguri Lyons and Muirhead",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1474000000101_24_1_sat.html",
+        "name": "Route 24 to Wanguri Lyons and Muirhead",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1474011111001_24_1_mon-fri.html",
+        "name": "Route 24 to Wanguri Lyons and Muirhead",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1486700000011_22_1_sun.html",
+        "name": "Route 22 to Darwin Semi Express",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1486700001001_22_1_fri.html",
+        "name": "Route 22 to Darwin Semi Express",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1486700000101_22_1_sat.html",
+        "name": "Route 22 to Darwin Semi Express",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1486711111001_22_1_mon-fri.html",
+        "name": "Route 22 to Darwin Semi Express",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1486700000010_22_0_sun.html",
+        "name": "Route 22 to Leanyer Semi Express",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1486700001000_22_0_fri.html",
+        "name": "Route 22 to Leanyer Semi Express",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1486700000100_22_0_sat.html",
+        "name": "Route 22 to Leanyer Semi Express",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1486711111000_22_0_mon-fri.html",
+        "name": "Route 22 to Leanyer Semi Express",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1495000000011_21_1_sun.html",
+        "name": "Route 21 to Darwin Semi Express",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1495000001001_21_1_fri.html",
+        "name": "Route 21 to Darwin Semi Express",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1495000000101_21_1_sat.html",
+        "name": "Route 21 to Darwin Semi Express",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1495011111001_21_1_mon-fri.html",
+        "name": "Route 21 to Darwin Semi Express",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1495000000010_21_0_sun.html",
+        "name": "Route 21 to Darwin Hospital Precinct",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1495000001000_21_0_fri.html",
+        "name": "Route 21 to Darwin Hospital Precinct",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1495000000100_21_0_sat.html",
+        "name": "Route 21 to Darwin Hospital Precinct",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1495011111000_21_0_mon-fri.html",
+        "name": "Route 21 to Darwin Hospital Precinct",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1526000000011_14_1_sun.html",
+        "name": "Route 14 to Cullen Bay and Waterfront",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1526000001001_14_1_fri.html",
+        "name": "Route 14 to Cullen Bay and Waterfront",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1526000000101_14_1_sat.html",
+        "name": "Route 14 to Cullen Bay and Waterfront",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1526011111001_14_1_mon-fri.html",
+        "name": "Route 14 to Cullen Bay and Waterfront",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1536500000011_12_1_sun.html",
+        "name": "Route 12 to Malak and Karama",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1536500001001_12_1_fri.html",
+        "name": "Route 12 to Malak and Karama",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1536500000101_12_1_sat.html",
+        "name": "Route 12 to Malak and Karama",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1536511111001_12_1_mon-fri.html",
+        "name": "Route 12 to Malak and Karama",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1573100000011_11_1_sun.html",
+        "name": "Route 11 to Millner Rapid Creek and Alawa",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1573100001001_11_1_fri.html",
+        "name": "Route 11 to Millner Rapid Creek and Alawa",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1573100000101_11_1_sat.html",
+        "name": "Route 11 to Millner Rapid Creek and Alawa",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1573111111001_11_1_mon-fri.html",
+        "name": "Route 11 to Millner Rapid Creek and Alawa",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1592500000011_10_1_sun.html",
+        "name": "Route 10 to Darwin via Bagot Rd",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1592500001001_10_1_fri.html",
+        "name": "Route 10 to Darwin via Bagot Rd",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1592500000101_10_1_sat.html",
+        "name": "Route 10 to Darwin via Bagot Rd",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1592511111001_10_1_mon-fri.html",
+        "name": "Route 10 to Darwin via Bagot Rd",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1592500000010_10_0_sun.html",
+        "name": "Route 10 to Casuarina via Bagot Rd",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1592500001000_10_0_fri.html",
+        "name": "Route 10 to Casuarina via Bagot Rd",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1592500000100_10_0_sat.html",
+        "name": "Route 10 to Casuarina via Bagot Rd",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1592511111000_10_0_mon-fri.html",
+        "name": "Route 10 to Casuarina via Bagot Rd",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1680300000011_9_1_sun.html",
+        "name": "Route 9 to Casuarina",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1680300001001_9_1_fri.html",
+        "name": "Route 9 to Casuarina",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1680300000101_9_1_sat.html",
+        "name": "Route 9 to Casuarina",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1680311111001_9_1_mon-fri.html.html",
+        "name": "Route 9 to Casuarina",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1680300000010_9_0_sun.html",
+        "name": "Route 9 to Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1680300001000_9_0_fri.html",
+        "name": "Route 9 to Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1680300000100_9_0_sat.html",
+        "name": "Route 9 to Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1680311111000_9_0_mon-fri.html",
+        "name": "Route 9 to Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1719800000011_8_1_sun.html",
+        "name": "Route 8 to Darwin",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1719800001001_8_1_fri.html",
+        "name": "Route 8 to Darwin",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1719800000101_8_1_sat.html",
+        "name": "Route 8 to Darwin",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1719811111001_8_1_mon-fri.html",
+        "name": "Route 8 to Darwin",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1719800000010_8_0_sun.html",
+        "name": "Route 8 to Palmerston",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1719800001000_8_0_fri.html",
+        "name": "Route 8 to Palmerston",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1719800000100_8_0_sat.html",
+        "name": "Route 8 to Palmerston",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1719811111000_8_0_mon-fri.html",
+        "name": "Route 8 to Palmerston",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1996300000011_7_1_sun.html",
+        "name": "Route 7 to Stuart Park and Bayview",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1996300001001_7_1_fri.html",
+        "name": "Route 7 to Stuart Park and Bayview",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1996300000101_7_1_sat.html",
+        "name": "Route 7 to Stuart Park and Bayview",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1996311111001_7_1_mon-fri.html",
+        "name": "Route 7 to Stuart Park and Bayview",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2052000000011_6_1_sun.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2052000001001_6_1_fri.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\2052000000101_6_1_sat.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\2052011111001_6_1_mon-fri.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\2052000000011_6_1_sun.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\2052000001001_6_1_fri.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Fri"
+	},	{
+		"href" : "timetables\\2052000000101_6_1_sat.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Sat"
+	},	{
+		"href" : "timetables\\2052011111001_6_1_mon-fri.html",
+        "name": "Route 6 to Museum Fannie Bay and Parap",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1769100000011_5_1_sun.html",
+        "name": "Route 5 to Darwin via Winnellie",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1769100001001_5_1_fri.html",
+        "name": "Route 5 to Darwin via Winnellie",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1769100000101_5_1_sat.html",
+        "name": "Route 5 to Darwin via Winnellie",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1769111111001_5_1_mon-fri.html",
+        "name": "Route 5 to Darwin via Winnellie",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1769100000010_5_0_sun.html",
+        "name": "Route 5 to Casuarina via Winnellie",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1769100001000_5_0_fri.html",
+        "name": "Route 5 to Casuarina via Winnellie",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1769100000100_5_0_sat.html",
+        "name": "Route 5 to Casuarina via Winnellie",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1769111111000_5_0_mon-fri.html",
+        "name": "Route 5 to Casuarina via Winnellie",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1840800000011_4_1_sun.html",
+        "name": "Route 4 to Darwin via CDU and Nightcliff",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1840800001001_4_1_fri.html",
+        "name": "Route 4 to Darwin via CDU and Nightcliff",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1840800000101_4_1_sat.html",
+        "name": "Route 4 to Darwin via CDU and Nightcliff",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1840811111001_4_1_mon-fri.html",
+        "name": "Route 4 to Darwin via CDU and Nightcliff",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1840800000010_4_0_sun.html",
+        "name": "Route 4 to Casuarina via Nightcliff and CDU",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1840800001000_4_0_fri.html",
+        "name": "Route 4 to Casuarina via Nightcliff and CDU",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1840800000100_4_0_sat.html",
+        "name": "Route 4 to Casuarina via Nightcliff and CDU",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1840811111000_4_0_mon-fri.html",
+        "name": "Route 4 to Casuarina via Nightcliff and CDU",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1346800000011_3_1_sun.html",
+        "name": "Route 3 to Jingili Moil and Anula",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1346800001001_3_1_fri.html",
+        "name": "Route 3 to Jingili Moil and Anula",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1346800000101_3_1_sat.html",
+        "name": "Route 3 to Jingili Moil and Anula",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1346811111001_3_1_mon-fri.html",
+        "name": "Route 3 to Jingili Moil and Anula",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1967700000011_2_1_sun.html",
+        "name": "Route 2 to Wanguri Leanyer Wulagi and Wagaman",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1967700001001_2_1_fri.html",
+        "name": "Route 2 to Wanguri Leanyer Wulagi and Wagaman",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1967700000101_2_1_sat.html",
+        "name": "Route 2 to Wanguri Leanyer Wulagi and Wagaman",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1967711111001_2_1_mon-fri.html",
+        "name": "Route 2 to Wanguri Leanyer Wulagi and Wagaman",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1985800000011_1_1_sun.html",
+        "name": "Route 1 to Darwin Hospital Precinct Tiwi and Nakara",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1985800001001_1_1_fri.html",
+        "name": "Route 1 to Darwin Hospital Precinct Tiwi and Nakara",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1985800000101_1_1_sat.html",
+        "name": "Route 1 to Darwin Hospital Precinct Tiwi and Nakara",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1985811111001_1_1_mon-fri.html",
+        "name": "Route 1 to Darwin Hospital Precinct Tiwi and Nakara",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1309500000010_ol1_0_sun.html",
+        "name": "Route OL1 to OL1",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1309500000010_ol1_0_sun.html",
+        "name": "Route OL1 to OL1",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1309500001000_ol1_0_fri.html",
+        "name": "Route OL1 to OL1",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1309500000100_ol1_0_sat.html",
+        "name": "Route OL1 to OL1",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1309511111000_ol1_0_mon-fri.html",
+        "name": "Route OL1 to OL1",
+        "day": "Mon-Fri"
+	},
+	{
+		"href" : "timetables\\1272600000010_ol2_0_sun.html",
+        "name": "Route OL2 to OL2",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1272600001000_ol2_0_fri.html",
+        "name": "Route OL2 to OL2",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1272600000100_ol2_0_sat.html",
+        "name": "Route OL2 to OL2",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1272611111000_ol2_0_mon-fri.html",
+        "name": "Route OL2 to OL2",
+        "day": "mon-fri"
+	},
+	{
+		"href" : "timetables\\1449000000011_1h_1_sun.html",
+        "name": "Route 1h to Royal Darwin Hospital Diabetes Aust",
+        "day": "Sun"
+	},
+	{
+		"href" : "timetables\\1449000001001_1h_1_fri.html",
+        "name": "Route 1h to Royal Darwin Hospital Diabetes Aust",
+        "day": "Fri"
+	},
+	{
+		"href" : "timetables\\1449000000101_1h_1_sat.html",
+        "name": "Route 1h to Royal Darwin Hospital Diabetes Aust",
+        "day": "Sat"
+	},
+	{
+		"href" : "timetables\\1449011111001_1h_1_mon-fri.html",
+        "name": "Route 1h to Royal Darwin Hospital Diabetes Aust",
+        "day": "Mon-Fri"
+	}
+]

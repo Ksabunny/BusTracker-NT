@@ -1,0 +1,2716 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/timetable_styles.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpcTQ3MXEiLCJhIjoiY2tlemthbWxjMGsxeTJ5cWNtd2s3ODg5ZyJ9.LsMtbXnNWYKEEngLgIospA';
+  </script>
+  <script src="../js/timetable-map.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Timetable generated on Sun Sep 13 2020 15:47:43 GMT+0800 (Aus Time) using GTFS-to-HTML version 1.0.4 -->
+  <div class="timetable-page menu-type-simple">
+    <div class="container-fluid">
+      <div class="row mt-4 mb-4">
+        <div class="col-md-12">
+          <h1 class="timetable-page-label">
+            <div class="route-color-swatch-large" style="background-color: #004C5B"></div><span>Route 10 to Casuarina via Bagot Rd</span>
+          </h1>
+          <div class="effective-date">Effective July 8, 2016</div>
+        </div>
+      </div>
+      <div class="timetable" id="timetable_id_1592500000010" data-day-list="Sun" data-direction-name="Casuarina via Bagot Rd" data-timetable-id="15925|0000001|0" data-direction-id="0" data-route-id="15925">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="description">Route 10 to Casuarina via Bagot Rd | sunday</h2>
+            <div class="service-notes"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map" id="map_timetable_id_1592500000010"></div>
+          </div>
+        </div>
+        <script>
+          (function() {
+            var id = 'timetable_id_1592500000010';
+            var geojson = {
+              "type": "FeatureCollection",
+              "features": [{
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "15925",
+                  "agency_id": "1",
+                  "route_short_name": "10",
+                  "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.844413, -12.464832],
+                    [130.844957, -12.464287],
+                    [130.842628, -12.462031],
+                    [130.84261, -12.462022],
+                    [130.841598, -12.463032],
+                    [130.839769, -12.461291],
+                    [130.839433, -12.460878],
+                    [130.83625, -12.457775],
+                    [130.836203, -12.457802],
+                    [130.836129, -12.45781],
+                    [130.836056, -12.457745],
+                    [130.836048, -12.457673],
+                    [130.836105, -12.457601],
+                    [130.836151, -12.457583],
+                    [130.836243, -12.457612],
+                    [130.839148, -12.454706],
+                    [130.839683, -12.454088],
+                    [130.840769, -12.453034],
+                    [130.841007, -12.452584],
+                    [130.841046, -12.445056],
+                    [130.841366, -12.442802],
+                    [130.841408, -12.442468],
+                    [130.841412, -12.442223],
+                    [130.841253, -12.441703],
+                    [130.840966, -12.441164],
+                    [130.840859, -12.4409],
+                    [130.84078, -12.440617],
+                    [130.840739, -12.440326],
+                    [130.840898, -12.439567],
+                    [130.841319, -12.43794],
+                    [130.841602, -12.437545],
+                    [130.843348, -12.436201],
+                    [130.847155, -12.433989],
+                    [130.851309, -12.432017],
+                    [130.855909, -12.429907],
+                    [130.856394, -12.429542],
+                    [130.856572, -12.429345],
+                    [130.85665, -12.429129],
+                    [130.856663, -12.428857],
+                    [130.856487, -12.428283],
+                    [130.856291, -12.427772],
+                    [130.856239, -12.427545],
+                    [130.856215, -12.427318],
+                    [130.85621, -12.425213],
+                    [130.856172, -12.422184],
+                    [130.856171, -12.417313],
+                    [130.856125, -12.410447],
+                    [130.856124, -12.407463],
+                    [130.856094, -12.402647],
+                    [130.856067, -12.401994],
+                    [130.856028, -12.395318],
+                    [130.85604, -12.390213],
+                    [130.856054, -12.389877],
+                    [130.856095, -12.389624],
+                    [130.856162, -12.389426],
+                    [130.85621, -12.389326],
+                    [130.856549, -12.38886],
+                    [130.856895, -12.388556],
+                    [130.857174, -12.388388],
+                    [130.858447, -12.38779],
+                    [130.859674, -12.387191],
+                    [130.861383, -12.386435],
+                    [130.867276, -12.384661],
+                    [130.870659, -12.383667],
+                    [130.878012, -12.382375],
+                    [130.878783, -12.382005],
+                    [130.881637, -12.37928],
+                    [130.882133, -12.377591],
+                    [130.883165, -12.374532],
+                    [130.883397, -12.373792]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "15925",
+                  "agency_id": "1",
+                  "route_short_name": "10",
+                  "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.883406, -12.373792],
+                    [130.883794, -12.372537],
+                    [130.882628, -12.372185],
+                    [130.882076, -12.372086],
+                    [130.881864, -12.372056],
+                    [130.881744, -12.372072],
+                    [130.881493, -12.372168],
+                    [130.881364, -12.372176],
+                    [130.881226, -12.372146],
+                    [130.881107, -12.372081],
+                    [130.880605, -12.37172],
+                    [130.880435, -12.371963],
+                    [130.880302, -12.372224],
+                    [130.880225, -12.372495],
+                    [130.880184, -12.372766],
+                    [130.880377, -12.372769],
+                    [130.880506, -12.373433]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "15925",
+                  "agency_id": "1",
+                  "route_short_name": "10",
+                  "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.838587, -12.460059],
+                    [130.838114, -12.459598]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "102",
+                  "stop_code": "104",
+                  "stop_name": "St Johns College",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.84116, -12.443017]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "128",
+                  "stop_code": "112",
+                  "stop_name": "Op Bagot Park",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.855906, -12.396124]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "200",
+                  "stop_code": "115",
+                  "stop_name": "Alawa Crescent (Outbound)",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.871447, -12.383406]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "203",
+                  "stop_code": "116",
+                  "stop_name": "Trower Road Alawa",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.874971, -12.382767]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "208",
+                  "stop_code": "68",
+                  "stop_name": "Alawa Crescent",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "19677",
+                    "agency_id": "1",
+                    "route_short_name": "2",
+                    "route_long_name": "Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.880928, -12.379796]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "220",
+                  "stop_code": "110",
+                  "stop_name": "Op RAAF Golf Course",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.855971, -12.412767]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "222",
+                  "stop_code": "109",
+                  "stop_name": "Op Raaf Base",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.855986, -12.420385]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "293",
+                  "stop_code": "70",
+                  "stop_name": "Woolworths Smith St",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19963",
+                    "agency_id": "1",
+                    "route_short_name": "7",
+                    "route_long_name": "Darwin Stuart Park  Bayview",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.840212, -12.461896]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "294",
+                  "stop_code": "72",
+                  "stop_name": "St Marys Smith St",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19963",
+                    "agency_id": "1",
+                    "route_short_name": "7",
+                    "route_long_name": "Darwin Stuart Park  Bayview",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.838039, -12.459679]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "312",
+                  "stop_code": "69",
+                  "stop_name": "Darwin Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19963",
+                    "agency_id": "1",
+                    "route_short_name": "7",
+                    "route_long_name": "Darwin Stuart Park  Bayview",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15260",
+                    "agency_id": "1",
+                    "route_short_name": "14",
+                    "route_long_name": "Darwin, Cullen Bay and Waterfront",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.84435, -12.464777]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "609",
+                  "stop_code": "114",
+                  "stop_name": "St Pauls Primary School",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.858682, -12.387503]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "610",
+                  "stop_code": "113",
+                  "stop_name": "K F C",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.855911, -12.391399]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "706",
+                  "stop_code": "107",
+                  "stop_name": "Ross Smith Avenue",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.849501, -12.432644]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "725",
+                  "stop_code": "47",
+                  "stop_name": "Scaturchio Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "19677",
+                    "agency_id": "1",
+                    "route_short_name": "2",
+                    "route_long_name": "Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15365",
+                    "agency_id": "1",
+                    "route_short_name": "12",
+                    "route_long_name": "Casuarina, Malak, Karama",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14740",
+                    "agency_id": "1",
+                    "route_short_name": "24",
+                    "route_long_name": "Casuarina, Wanguri, Lyons, Muirhead ",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.882066, -12.372131]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "731",
+                  "stop_code": "105",
+                  "stop_name": "Nylander Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.84097, -12.439078]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "733",
+                  "stop_code": "103",
+                  "stop_name": "Stuart Park",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19963",
+                    "agency_id": "1",
+                    "route_short_name": "7",
+                    "route_long_name": "Darwin Stuart Park  Bayview",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.840863, -12.448636]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "749",
+                  "stop_code": "71",
+                  "stop_name": "St Mary's School",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20520",
+                    "agency_id": "1",
+                    "route_short_name": "6",
+                    "route_long_name": "Darwin Museum  Fannie Bay Parap",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19963",
+                    "agency_id": "1",
+                    "route_short_name": "7",
+                    "route_long_name": "Darwin Stuart Park  Bayview",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.838138, -12.459871]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "765",
+                  "stop_code": "46",
+                  "stop_name": "Trower Rd - Opp MVR",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "19677",
+                    "agency_id": "1",
+                    "route_short_name": "2",
+                    "route_long_name": "Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15365",
+                    "agency_id": "1",
+                    "route_short_name": "12",
+                    "route_long_name": "Casuarina, Malak, Karama",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14740",
+                    "agency_id": "1",
+                    "route_short_name": "24",
+                    "route_long_name": "Casuarina, Wanguri, Lyons, Muirhead ",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.883269, -12.373753]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "767",
+                  "stop_code": "97",
+                  "stop_name": "Trower Road",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.867233, -12.384515]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "84",
+                  "stop_code": "106",
+                  "stop_name": "Parap Rd",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14867",
+                    "agency_id": "1",
+                    "route_short_name": "22",
+                    "route_long_name": "Leanyer Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.844143, -12.435451]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "85",
+                  "stop_code": "108",
+                  "stop_name": "Ludmilla Primary School",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.856061, -12.424676]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "86",
+                  "stop_code": "757",
+                  "stop_name": "Bunnings",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.855985, -12.401322]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "88",
+                  "stop_code": "96",
+                  "stop_name": "opp Rapid Creek Shops",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.862775, -12.385866]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "89",
+                  "stop_code": "900",
+                  "stop_name": "Casuarina Terminus",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "14490",
+                    "agency_id": "1",
+                    "route_short_name": "1h",
+                    "route_long_name": "Royal Darwin Hospital, Diabetes Australia",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19858",
+                    "agency_id": "1",
+                    "route_short_name": "1",
+                    "route_long_name": "Darwin Hospital Precinct, Tiwi, Nakara",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "19677",
+                    "agency_id": "1",
+                    "route_short_name": "2",
+                    "route_long_name": "Casuarina, Wanguri, Leanyer, Wulagi, Wagaman",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13468",
+                    "agency_id": "1",
+                    "route_short_name": "3",
+                    "route_long_name": "Casuarina, Alawa, Jingili, Moil, Anula",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "18408",
+                    "agency_id": "1",
+                    "route_short_name": "4",
+                    "route_long_name": "Casuarina  Darwin Via CDU & Nightcliff",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "17691",
+                    "agency_id": "1",
+                    "route_short_name": "5",
+                    "route_long_name": "Casuarina  Marrara  Berrimah Winnellie Darwin",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15925",
+                    "agency_id": "1",
+                    "route_short_name": "10",
+                    "route_long_name": "Casuarina Darwin Via Bagot Rd",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15731",
+                    "agency_id": "1",
+                    "route_short_name": "11",
+                    "route_long_name": "Millner, Rapid Creek, Alawa",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15365",
+                    "agency_id": "1",
+                    "route_short_name": "12",
+                    "route_long_name": "Casuarina, Malak, Karama",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14950",
+                    "agency_id": "1",
+                    "route_short_name": "21",
+                    "route_long_name": "Hospital Precinct Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14740",
+                    "agency_id": "1",
+                    "route_short_name": "24",
+                    "route_long_name": "Casuarina, Wanguri, Lyons, Muirhead ",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14608",
+                    "agency_id": "1",
+                    "route_short_name": "25",
+                    "route_long_name": "Karama Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.880496, -12.373469]
+                }
+              }]
+            };
+            var routeColor = '#' + '004C5B';
+            createMap(id, geojson, routeColor);
+          })();
+        </script>
+       <div class="row">
+        <div class="col-md-12">
+          <div class="table-container">
+            <table class="table table-vertical" summary="This table shows schedules for a selection of key stops on the route for null Mon-Fri. Stops and their schedule times are listed in the columns." data-orientation="vertical">
+              <caption class="sr-only">null | Mon-Fri</caption>
+              <colgroup>
+                <col class="stop-0" id="stop_id_312" data-stop-id="312">
+                <col class="stop-1" id="stop_id_293" data-stop-id="293">
+                <col class="stop-2" id="stop_id_294" data-stop-id="294">
+                <col class="stop-3" id="stop_id_733" data-stop-id="733">
+                <col class="stop-4" id="stop_id_102" data-stop-id="102">
+                <col class="stop-5" id="stop_id_731" data-stop-id="731">
+                <col class="stop-6" id="stop_id_84" data-stop-id="84">
+                <col class="stop-7" id="stop_id_706" data-stop-id="706">
+                <col class="stop-8" id="stop_id_636" data-stop-id="636">
+                <col class="stop-9" id="stop_id_292" data-stop-id="292">
+                <col class="stop-10" id="stop_id_500" data-stop-id="500">
+                <col class="stop-11" id="stop_id_658" data-stop-id="658">
+                <col class="stop-12" id="stop_id_660" data-stop-id="660">
+                <col class="stop-13" id="stop_id_112" data-stop-id="112">
+                <col class="stop-14" id="stop_id_391" data-stop-id="391">
+                <col class="stop-15" id="stop_id_822" data-stop-id="822">
+                <col class="stop-16" id="stop_id_96" data-stop-id="96">
+                <col class="stop-17" id="stop_id_732" data-stop-id="732">
+                <col class="stop-18" id="stop_id_734" data-stop-id="734">
+                <col class="stop-19" id="stop_id_129" data-stop-id="129">
+                <col class="stop-20" id="stop_id_622" data-stop-id="622">
+                <col class="stop-21" id="stop_id_623" data-stop-id="623">
+                <col class="stop-22" id="stop_id_312" data-stop-id="312">
+              </colgroup>
+              <thead>
+              <tr>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Darwin Interchange</div>
+                  <div class="stop-code">69</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Woolworths Smith St</div>
+                  <div class="stop-code">70</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">St Marys Smith St</div>
+                  <div class="stop-code">72</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Stuart Park</div>
+                  <div class="stop-code">103</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">St Johns College</div>
+                  <div class="stop-code">104</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Nylander Street</div>
+                  <div class="stop-code">105</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Parap Rd</div>
+                  <div class="stop-code">106</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Ross Smith Avenue</div>
+                  <div class="stop-code">107</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Progress Drive Shops - Nightcliff</div>
+                  <div class="stop-code">86</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Casuarina Interchange</div>
+                  <div class="stop-code">933</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Kalymnos Drive</div>
+                  <div class="stop-code">814</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Gateway Shopping Centre</div>
+                  <div class="stop-code">337</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Palmerston Interchange</div>
+                  <div class="stop-code">925</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Op Gateway Shopping Centre</div>
+                  <div class="stop-code">385</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Berrimah / Frost Ford</div>
+                  <div class="stop-code">940</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Woolner Road</div>
+                  <div class="stop-code">173</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Parap Road - Stuart Highway</div>
+                  <div class="stop-code">174</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Westralia Street</div>
+                  <div class="stop-code">175</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Kerry Mazda</div>
+                  <div class="stop-code">176</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Daly Street</div>
+                  <div class="stop-code">177</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Ducks Nuts</div>
+                  <div class="stop-code">178</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Hilton Hotel</div>
+                  <div class="stop-code">179</div>
+                </th>
+                <th class="stop-header" scope="col" width="4.35%">
+                  <div class="stop-name">Darwin Interchange</div>
+                  <div class="stop-code">69</div>
+                </th>
+              </tr>
+              </thead>
+              <tbody>
+              <tr class="trip-row" id="trip_id_82511">
+                <td class="stop-time am"><span class="stop-time-text">6:55am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">6:58am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">6:58am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:01am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:03am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:03am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:05am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:06am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82557">
+                <td class="stop-time am"><span class="stop-time-text">7:40am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:43am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:43am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:46am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:48am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:48am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:50am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">7:51am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82603">
+                <td class="stop-time am"><span class="stop-time-text">8:10am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:13am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:13am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:16am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:18am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:18am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:20am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:21am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82649">
+                <td class="stop-time am"><span class="stop-time-text">8:45am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:48am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:48am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:51am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:53am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:53am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:55am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">8:56am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82695">
+                <td class="stop-time am"><span class="stop-time-text">9:15am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:18am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:18am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:21am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:23am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:23am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:25am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:26am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82741">
+                <td class="stop-time am"><span class="stop-time-text">9:50am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:53am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:53am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:56am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:58am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">9:58am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:00am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:01am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82787">
+                <td class="stop-time am"><span class="stop-time-text">10:20am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:23am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:23am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:26am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:28am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:28am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:30am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:31am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82833">
+                <td class="stop-time am"><span class="stop-time-text">10:55am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:58am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">10:58am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:01am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:03am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:03am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:05am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:06am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82879">
+                <td class="stop-time am"><span class="stop-time-text">11:25am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:28am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:28am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:31am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:33am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:33am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:35am</span></td>
+                <td class="stop-time am"><span class="stop-time-text">11:36am</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82925">
+                <td class="stop-time pm"><span class="stop-time-text">12:00pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:03pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:03pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:06pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:10pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:11pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_82971">
+                <td class="stop-time pm"><span class="stop-time-text">12:30pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:33pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:33pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:36pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:38pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:38pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:40pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">12:41pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83017">
+                <td class="stop-time pm"><span class="stop-time-text">1:05pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:11pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:13pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:13pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:15pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:16pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83063">
+                <td class="stop-time pm"><span class="stop-time-text">1:40pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:46pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:50pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">1:51pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83109">
+                <td class="stop-time pm"><span class="stop-time-text">2:10pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:13pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:13pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:16pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:18pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:18pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:20pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:21pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83155">
+                <td class="stop-time pm"><span class="stop-time-text">2:40pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:46pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:50pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">2:51pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83201">
+                <td class="stop-time pm"><span class="stop-time-text">3:15pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:18pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:18pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:21pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:23pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:23pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:25pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:26pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83247">
+                <td class="stop-time pm"><span class="stop-time-text">3:50pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:53pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:53pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:56pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:58pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">3:58pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:00pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:01pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83293">
+                <td class="stop-time pm"><span class="stop-time-text">4:20pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:23pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:23pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:26pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:28pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:28pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:30pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:31pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83339">
+                <td class="stop-time pm"><span class="stop-time-text">4:50pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:53pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:53pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:56pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:58pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">4:58pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:00pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:01pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83385">
+                <td class="stop-time pm"><span class="stop-time-text">5:25pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:28pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:28pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:31pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:33pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:33pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:35pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">5:36pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83431">
+                <td class="stop-time pm"><span class="stop-time-text">6:00pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:03pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:03pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:06pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:10pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:11pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83477">
+                <td class="stop-time pm"><span class="stop-time-text">6:40pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:46pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:50pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">6:51pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83523">
+                <td class="stop-time pm"><span class="stop-time-text">7:05pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:08pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:11pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:13pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:13pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:15pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:16pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              <tr class="trip-row" id="trip_id_83569">
+                <td class="stop-time pm"><span class="stop-time-text">7:40pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:43pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:46pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:48pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:50pm</span></td>
+                <td class="stop-time pm"><span class="stop-time-text">7:51pm</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+              </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+        <div class="row timetable-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

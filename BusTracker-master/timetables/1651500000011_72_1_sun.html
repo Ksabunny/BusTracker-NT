@@ -1,0 +1,2171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/timetable_styles.css">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+  <script src="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.js"></script>
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiYXRpcTQ3MXEiLCJhIjoiY2tlemthbWxjMGsxeTJ5cWNtd2s3ODg5ZyJ9.LsMtbXnNWYKEEngLgIospA';
+  </script>
+  <script src="../js/timetable-map.js"></script>
+  <link href="https://api.mapbox.com/mapbox-gl-js/v1.12.0/mapbox-gl.css" rel="stylesheet">
+</head>
+
+<body>
+  <!-- Timetable generated on Sun Sep 13 2020 15:47:24 GMT+0800 (Malaysia Time) using GTFS-to-HTML version 1.0.4 -->
+  <div class="timetable-page menu-type-simple">
+    <div class="container-fluid">
+      <div class="row mt-4 mb-4">
+        <div class="col-md-12">
+          <h1 class="timetable-page-label">
+            <div class="route-color-swatch-large" style="background-color: #004C5B"></div><span>Route 72 to Gunn Bakewell and Rosebery</span>
+          </h1>
+          <div class="effective-date">Effective July 8, 2016</div>
+        </div>
+      </div>
+      <div class="timetable" id="timetable_id_1651500000011" data-day-list="Sun" data-direction-name="Gunn Bakewell and Rosebery" data-timetable-id="16515|0000001|1" data-direction-id="1" data-route-id="16515">
+        <div class="row">
+          <div class="col-md-12">
+            <h2 class="description">Route 72 to Gunn Bakewell and Rosebery | sunday</h2>
+            <div class="service-notes"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="map" id="map_timetable_id_1651500000011"></div>
+          </div>
+        </div>
+        <script>
+          (function() {
+            var id = 'timetable_id_1651500000011';
+            var geojson = {
+              "type": "FeatureCollection",
+              "features": [{
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.987365, -12.479073],
+                    [130.98729, -12.479153],
+                    [130.987206, -12.47917],
+                    [130.987142, -12.479133],
+                    [130.986533, -12.478454],
+                    [130.986516, -12.478363],
+                    [130.98635, -12.478369],
+                    [130.986085, -12.478184],
+                    [130.985916, -12.478372],
+                    [130.985544, -12.478594],
+                    [130.98459, -12.479434],
+                    [130.984395, -12.479522],
+                    [130.9839, -12.479977],
+                    [130.983216, -12.480648],
+                    [130.983688, -12.48119],
+                    [130.984527, -12.481918],
+                    [130.984857, -12.482131],
+                    [130.984913, -12.482068],
+                    [130.985006, -12.482006],
+                    [130.985181, -12.482009],
+                    [130.985282, -12.482064],
+                    [130.985345, -12.482156],
+                    [130.985372, -12.482265],
+                    [130.985352, -12.482374],
+                    [130.985314, -12.482428],
+                    [130.98621, -12.483039],
+                    [130.986438, -12.483232],
+                    [130.986711, -12.483517],
+                    [130.986956, -12.483829],
+                    [130.987154, -12.484158],
+                    [130.988096, -12.486058],
+                    [130.988284, -12.486478],
+                    [130.988426, -12.486915],
+                    [130.988502, -12.487369],
+                    [130.988533, -12.487823],
+                    [130.988499, -12.488285],
+                    [130.988418, -12.488738],
+                    [130.988262, -12.489362],
+                    [130.98851, -12.489438],
+                    [130.989274, -12.489602],
+                    [130.989532, -12.489606],
+                    [130.990135, -12.489433],
+                    [130.991075, -12.488856],
+                    [130.99141, -12.488697],
+                    [130.991725, -12.488611],
+                    [130.992002, -12.488587],
+                    [130.99251, -12.488576],
+                    [130.993891, -12.488795],
+                    [130.994381, -12.488801],
+                    [130.994852, -12.488771],
+                    [130.995324, -12.488696],
+                    [130.995999, -12.48856],
+                    [130.996405, -12.488611],
+                    [130.996754, -12.488734],
+                    [130.997047, -12.488883],
+                    [130.997438, -12.489287],
+                    [130.997628, -12.489562],
+                    [130.997744, -12.489845],
+                    [130.997814, -12.490163],
+                    [130.997828, -12.490481],
+                    [130.997803, -12.490943],
+                    [130.997764, -12.491033],
+                    [130.997654, -12.491023],
+                    [130.997229, -12.491035],
+                    [130.996776, -12.491102],
+                    [130.996211, -12.491239],
+                    [130.995737, -12.491432],
+                    [130.992706, -12.492987],
+                    [130.99252, -12.493057],
+                    [130.992518, -12.493193],
+                    [130.992406, -12.493291],
+                    [130.992708, -12.494175],
+                    [130.992794, -12.494585],
+                    [130.99284, -12.494585],
+                    [130.992923, -12.494623],
+                    [130.99295, -12.49465],
+                    [130.992968, -12.494714],
+                    [130.993819, -12.494581],
+                    [130.993921, -12.495834],
+                    [130.99379, -12.497238],
+                    [130.993771, -12.498607],
+                    [130.994473, -12.498608],
+                    [130.994462, -12.499388],
+                    [130.99449, -12.500023],
+                    [130.994588, -12.500224],
+                    [130.994742, -12.500426],
+                    [130.995007, -12.500647],
+                    [130.995181, -12.500704],
+                    [130.997408, -12.501215],
+                    [130.99729, -12.501776],
+                    [130.996047, -12.501496],
+                    [130.995909, -12.50212],
+                    [130.995814, -12.502336],
+                    [130.99542, -12.502793],
+                    [130.995215, -12.502908],
+                    [130.994974, -12.503005],
+                    [130.994419, -12.50307],
+                    [130.993773, -12.503025],
+                    [130.993608, -12.50295],
+                    [130.99348, -12.50283],
+                    [130.99329, -12.502583],
+                    [130.993145, -12.502426],
+                    [130.992796, -12.502249],
+                    [130.99274, -12.502321],
+                    [130.992684, -12.502339],
+                    [130.992601, -12.502319],
+                    [130.992563, -12.502409],
+                    [130.991789, -12.503632],
+                    [130.991844, -12.503679],
+                    [130.991871, -12.503733],
+                    [130.99187, -12.503806],
+                    [130.991794, -12.503905],
+                    [130.991729, -12.503931],
+                    [130.991628, -12.503911],
+                    [130.991555, -12.503838],
+                    [130.991547, -12.503738],
+                    [130.991576, -12.503675],
+                    [130.991293, -12.503471],
+                    [130.991155, -12.503433],
+                    [130.990979, -12.503458],
+                    [130.99084, -12.50352],
+                    [130.99013, -12.504063],
+                    [130.989963, -12.504161],
+                    [130.989833, -12.504195],
+                    [130.989214, -12.504241],
+                    [130.988134, -12.504245],
+                    [130.98794, -12.504224],
+                    [130.987756, -12.504158],
+                    [130.987628, -12.504083],
+                    [130.987418, -12.503908],
+                    [130.987275, -12.503616],
+                    [130.98724, -12.503452],
+                    [130.987215, -12.503261],
+                    [130.987236, -12.50308],
+                    [130.987285, -12.502918],
+                    [130.98738, -12.502747],
+                    [130.987492, -12.502612],
+                    [130.987632, -12.502487],
+                    [130.987995, -12.502283],
+                    [130.98807, -12.502257],
+                    [130.988191, -12.50215],
+                    [130.988351, -12.501971],
+                    [130.988473, -12.5018],
+                    [130.988578, -12.501584],
+                    [130.988655, -12.501313],
+                    [130.988755, -12.500797],
+                    [130.987208, -12.500495],
+                    [130.987143, -12.500548],
+                    [130.98706, -12.500556],
+                    [130.986968, -12.500528],
+                    [130.986895, -12.500445],
+                    [130.986895, -12.500427],
+                    [130.985828, -12.500222],
+                    [130.985799, -12.500267],
+                    [130.985725, -12.500311],
+                    [130.985605, -12.500319],
+                    [130.98555, -12.500282],
+                    [130.985514, -12.500227],
+                    [130.985505, -12.500172],
+                    [130.985553, -12.500064],
+                    [130.985655, -12.50002],
+                    [130.985738, -12.500039],
+                    [130.985811, -12.500104],
+                    [130.985837, -12.500186],
+                    [130.985828, -12.500222],
+                    [130.986895, -12.500427],
+                    [130.986979, -12.500365],
+                    [130.987044, -12.500357],
+                    [130.987127, -12.500376],
+                    [130.987164, -12.500404],
+                    [130.987191, -12.500431],
+                    [130.987208, -12.500495],
+                    [130.990136, -12.501061],
+                    [130.990197, -12.500645],
+                    [130.990181, -12.500499],
+                    [130.990127, -12.500372],
+                    [130.990037, -12.500261],
+                    [130.988816, -12.499111],
+                    [130.988725, -12.49901],
+                    [130.98858, -12.49879],
+                    [130.9885, -12.498571],
+                    [130.988476, -12.498335],
+                    [130.988488, -12.498145],
+                    [130.988567, -12.497792],
+                    [130.988764, -12.497523],
+                    [130.989138, -12.49721],
+                    [130.989287, -12.497113],
+                    [130.989698, -12.496765],
+                    [130.989811, -12.496603],
+                    [130.989935, -12.496369],
+                    [130.990022, -12.496043],
+                    [130.990043, -12.495871],
+                    [130.989972, -12.495072],
+                    [130.98992, -12.494772],
+                    [130.989788, -12.494344],
+                    [130.989645, -12.494025],
+                    [130.989476, -12.493569],
+                    [130.989309, -12.493612],
+                    [130.988966, -12.493734],
+                    [130.988186, -12.494077],
+                    [130.987797, -12.494144],
+                    [130.987327, -12.494093],
+                    [130.987289, -12.494192],
+                    [130.987177, -12.494272],
+                    [130.987029, -12.494279],
+                    [130.986983, -12.494251],
+                    [130.98691, -12.494196],
+                    [130.986866, -12.494059],
+                    [130.986886, -12.493969],
+                    [130.986989, -12.493861],
+                    [130.987081, -12.493835],
+                    [130.987164, -12.493846],
+                    [130.988262, -12.489362]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.988502, -12.487369],
+                    [130.988426, -12.486915]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.988096, -12.486058],
+                    [130.987154, -12.484158]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.986711, -12.483517],
+                    [130.986438, -12.483232],
+                    [130.987636, -12.482042],
+                    [130.987926, -12.481783],
+                    [130.986999, -12.480764],
+                    [130.986925, -12.480799],
+                    [130.986833, -12.480771],
+                    [130.986797, -12.480707],
+                    [130.986807, -12.480634],
+                    [130.986835, -12.480598],
+                    [130.9869, -12.480572],
+                    [130.986946, -12.480573],
+                    [130.986992, -12.4806],
+                    [130.988496, -12.479342],
+                    [130.986851, -12.477515],
+                    [130.986085, -12.478184]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.986516, -12.478363],
+                    [130.986657, -12.478183],
+                    [130.986787, -12.478176],
+                    [130.986951, -12.478323],
+                    [130.987441, -12.478892],
+                    [130.98743, -12.479001]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.987142, -12.479133],
+                    [130.986533, -12.478454]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.984068, -12.479817],
+                    [130.9839, -12.479977]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.986956, -12.483829],
+                    [130.987154, -12.484158]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.988262, -12.489362],
+                    [130.98851, -12.489438]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.995737, -12.491432],
+                    [130.992706, -12.492987]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.988755, -12.500797],
+                    [130.987208, -12.500495]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.985762, -12.500294],
+                    [130.985725, -12.500311]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.985765, -12.500058],
+                    [130.985793, -12.500076]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.985828, -12.500222],
+                    [130.986895, -12.500427]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.987208, -12.500495],
+                    [130.990062, -12.501051]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.989476, -12.493569],
+                    [130.989717, -12.493518],
+                    [130.991029, -12.49339],
+                    [130.992001, -12.493213],
+                    [130.992168, -12.49317],
+                    [130.992159, -12.493116],
+                    [130.992198, -12.493007],
+                    [130.992254, -12.492963],
+                    [130.992328, -12.492937],
+                    [130.992438, -12.492965],
+                    [130.992493, -12.493011],
+                    [130.99252, -12.493057]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.992968, -12.494714],
+                    [130.992977, -12.494732],
+                    [130.992948, -12.494823],
+                    [130.992873, -12.494876],
+                    [130.992781, -12.494875],
+                    [130.992698, -12.494819],
+                    [130.992672, -12.494728],
+                    [130.992701, -12.494647],
+                    [130.99272, -12.49462],
+                    [130.992794, -12.494585]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.992708, -12.494175],
+                    [130.992406, -12.493291],
+                    [130.992286, -12.49329],
+                    [130.992222, -12.493253],
+                    [130.992168, -12.49317]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.991029, -12.49339],
+                    [130.989717, -12.493518]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.987797, -12.494144],
+                    [130.98752, -12.494113]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.98738, -12.492932],
+                    [130.988262, -12.489362]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.988496, -12.479342],
+                    [130.986851, -12.477515]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "agency_name": "Department of Transport - Public Transport",
+                  "route_id": "16515",
+                  "agency_id": "1",
+                  "route_short_name": "72",
+                  "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                  "route_desc": "",
+                  "route_type": 3,
+                  "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                  "route_color": "#004C5B",
+                  "route_text_color": "#FFFFFF"
+                },
+                "geometry": {
+                  "type": "LineString",
+                  "coordinates": [
+                    [130.986787, -12.478176],
+                    [130.986951, -12.478323]
+                  ]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "119",
+                  "stop_code": "903",
+                  "stop_name": "Palmerston Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15896",
+                    "agency_id": "1",
+                    "route_short_name": "76",
+                    "route_long_name": "Palmerston Bakewell Rosebery Bellamack Moulden Driver",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25575",
+                    "agency_id": "1",
+                    "route_short_name": "78",
+                    "route_long_name": "Palmerston Kokoda Industries",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25800",
+                    "agency_id": "1",
+                    "route_short_name": "87",
+                    "route_long_name": "Palmerston Durack Heights",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25815",
+                    "agency_id": "1",
+                    "route_short_name": "88",
+                    "route_long_name": "Palmerston Palmerston Regional Hospital",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23253",
+                    "agency_id": "1",
+                    "route_short_name": "440",
+                    "route_long_name": "Humpty Doo, Coolalinga, Virginia, Noonamah, Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23694",
+                    "agency_id": "1",
+                    "route_short_name": "450",
+                    "route_long_name": "Humpty Doo Girraween Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.987475, -12.479083]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "164",
+                  "stop_code": "452",
+                  "stop_name": "Woolworths Palmerston",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.987086, -12.484375]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "168",
+                  "stop_code": "360",
+                  "stop_name": "Rosebery Shops",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.993745, -12.503079]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "285",
+                  "stop_code": "356",
+                  "stop_name": "Bakewell Primary School",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15896",
+                    "agency_id": "1",
+                    "route_short_name": "76",
+                    "route_long_name": "Palmerston Bakewell Rosebery Bellamack Moulden Driver",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.992756, -12.494004]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "298",
+                  "stop_code": "340",
+                  "stop_name": "Coles Palmerston",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.984275, -12.481516]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "422",
+                  "stop_code": "354",
+                  "stop_name": "Lakeview Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.993201, -12.488658]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "423",
+                  "stop_code": "355",
+                  "stop_name": "Lakeview Boulevard",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.997756, -12.4897]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "424",
+                  "stop_code": "357",
+                  "stop_name": "Landsborough Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.993927, -12.495417]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "425",
+                  "stop_code": "358",
+                  "stop_name": "Landsborough Street",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.993797, -12.498063]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "426",
+                  "stop_code": "359",
+                  "stop_name": "Aunger Crescent",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.995725, -12.500802]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "427",
+                  "stop_code": "361",
+                  "stop_name": "Rosebery Drive",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.989916, -12.504242]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "428",
+                  "stop_code": "362",
+                  "stop_name": "Rosebery Drive",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.988069, -12.504289]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "429",
+                  "stop_code": "363",
+                  "stop_name": "Rosebery Drive",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.988649, -12.501095]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "430",
+                  "stop_code": "365",
+                  "stop_name": "Shearwater Drive",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.98993, -12.495398]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "575",
+                  "stop_code": "352",
+                  "stop_name": "Maluka Drive",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.987379, -12.481331]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "660",
+                  "stop_code": "925",
+                  "stop_name": "Palmerston Interchange",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "17198",
+                    "agency_id": "1",
+                    "route_short_name": "8",
+                    "route_long_name": "Palmerston Darwin Via Stuart Highway",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16803",
+                    "agency_id": "1",
+                    "route_short_name": "9",
+                    "route_long_name": "Palmerston Berrimah Karama Casuarina",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16426",
+                    "agency_id": "1",
+                    "route_short_name": "28",
+                    "route_long_name": "Humpty Doo Coolalinga Darwin Semi Express",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#D60007",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16660",
+                    "agency_id": "1",
+                    "route_short_name": "70",
+                    "route_long_name": "Palmerston Driver Moulden",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "20903",
+                    "agency_id": "1",
+                    "route_short_name": "71",
+                    "route_long_name": "Palmerston Woodroffe Gray",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16299",
+                    "agency_id": "1",
+                    "route_short_name": "73",
+                    "route_long_name": "Palmerston Durack CDU Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "16104",
+                    "agency_id": "1",
+                    "route_short_name": "74",
+                    "route_long_name": "Palmerston Farrar Johnston Zuccoli",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15896",
+                    "agency_id": "1",
+                    "route_short_name": "76",
+                    "route_long_name": "Palmerston Bakewell Rosebery Bellamack Moulden Driver",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25575",
+                    "agency_id": "1",
+                    "route_short_name": "78",
+                    "route_long_name": "Palmerston Kokoda Industries",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25800",
+                    "agency_id": "1",
+                    "route_short_name": "87",
+                    "route_long_name": "Palmerston Durack Heights",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "25815",
+                    "agency_id": "1",
+                    "route_short_name": "88",
+                    "route_long_name": "Palmerston Palmerston Regional Hospital",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23446",
+                    "agency_id": "1",
+                    "route_short_name": "445",
+                    "route_long_name": "Humtpy Doo Cox Peninsula Rd Noonamah Coolalinga Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "14515",
+                    "agency_id": "1",
+                    "route_short_name": "446",
+                    "route_long_name": "Bees Creek Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23605",
+                    "agency_id": "1",
+                    "route_short_name": "447",
+                    "route_long_name": "Humpty Doo Mcminns Lagoon Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "23694",
+                    "agency_id": "1",
+                    "route_short_name": "450",
+                    "route_long_name": "Humpty Doo Girraween Howard Springs Palmerston",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "12726",
+                    "agency_id": "1",
+                    "route_short_name": "OL2",
+                    "route_long_name": "Orbital 2",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "13095",
+                    "agency_id": "1",
+                    "route_short_name": "OL1",
+                    "route_long_name": "Orbital 1",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#F77E22",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.98741, -12.479119]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "698",
+                  "stop_code": "970",
+                  "stop_name": "Bakewell Shopping Centre",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }, {
+                    "route_id": "15542",
+                    "agency_id": "1",
+                    "route_short_name": "77",
+                    "route_long_name": "Palmerston Indigenous Village Rosebery Bellamack",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.986397, -12.500411]
+                }
+              }, {
+                "type": "Feature",
+                "properties": {
+                  "stop_id": "727",
+                  "stop_code": "364",
+                  "stop_name": "Shearwater Drive",
+                  "stop_desc": "",
+                  "zone_id": "",
+                  "stop_url": "",
+                  "parent_station": "",
+                  "routes": [{
+                    "route_id": "16515",
+                    "agency_id": "1",
+                    "route_short_name": "72",
+                    "route_long_name": "Palmerston Gunn Bakewell Rosebery",
+                    "route_desc": "",
+                    "route_type": 3,
+                    "route_url": "http://www.transport.nt.gov.au/public-transport/public-bus-service/darwin",
+                    "route_color": "#004C5B",
+                    "route_text_color": "#FFFFFF"
+                  }],
+                  "agency_name": "Department of Transport - Public Transport"
+                },
+                "geometry": {
+                  "type": "Point",
+                  "coordinates": [130.988498, -12.498744]
+                }
+              }]
+            };
+            var routeColor = '#' + '004C5B';
+            createMap(id, geojson, routeColor);
+          })();
+        </script>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="table-container">
+              <table class="table table-vertical" summary="This table shows schedules for a selection of key stops on the route for Route 72 to Gunn Bakewell and Rosebery Sun. Stops and their schedule times are listed in the columns." data-orientation="vertical">
+                <caption class="sr-only">Route 72 to Gunn Bakewell and Rosebery | Sun</caption>
+                <colgroup>
+                  <col class="stop-0" id="stop_id_312" data-stop-id="312">
+                  <col class="stop-1" id="stop_id_293" data-stop-id="293">
+                  <col class="stop-2" id="stop_id_294" data-stop-id="294">
+                  <col class="stop-3" id="stop_id_733" data-stop-id="733">
+                  <col class="stop-4" id="stop_id_102" data-stop-id="102">
+                  <col class="stop-5" id="stop_id_731" data-stop-id="731">
+                  <col class="stop-6" id="stop_id_84" data-stop-id="84">
+                  <col class="stop-7" id="stop_id_706" data-stop-id="706">
+                  <col class="stop-8" id="stop_id_117" data-stop-id="117">
+                  <col class="stop-9" id="stop_id_658" data-stop-id="658">
+                  <col class="stop-10" id="stop_id_119" data-stop-id="119">
+                  <col class="stop-11" id="stop_id_112" data-stop-id="112">
+                  <col class="stop-12" id="stop_id_157" data-stop-id="157">
+                  <col class="stop-13" id="stop_id_289" data-stop-id="289">
+                  <col class="stop-14" id="stop_id_636" data-stop-id="636">
+                  <col class="stop-15" id="stop_id_822" data-stop-id="822">
+                  <col class="stop-16" id="stop_id_96" data-stop-id="96">
+                  <col class="stop-17" id="stop_id_732" data-stop-id="732">
+                  <col class="stop-18" id="stop_id_734" data-stop-id="734">
+                  <col class="stop-19" id="stop_id_129" data-stop-id="129">
+                  <col class="stop-20" id="stop_id_622" data-stop-id="622">
+                  <col class="stop-21" id="stop_id_623" data-stop-id="623">
+                  <col class="stop-22" id="stop_id_312" data-stop-id="312">
+                </colgroup>
+                <thead>
+                <tr>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Darwin Interchange</div>
+                    <div class="stop-code">69</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Woolworths Smith St</div>
+                    <div class="stop-code">70</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">St Marys Smith St</div>
+                    <div class="stop-code">72</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Stuart Park</div>
+                    <div class="stop-code">103</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">St Johns College</div>
+                    <div class="stop-code">104</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Nylander Street</div>
+                    <div class="stop-code">105</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Parap Rd</div>
+                    <div class="stop-code">106</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Ross Smith Avenue</div>
+                    <div class="stop-code">107</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Berrimah</div>
+                    <div class="stop-code">195</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Gateway Shopping Centre</div>
+                    <div class="stop-code">337</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Palmerston Interchange</div>
+                    <div class="stop-code">903</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Op Gateway Shopping Centre</div>
+                    <div class="stop-code">385</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Karama Shops</div>
+                    <div class="stop-code">130</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Casuarina Interchange Bay 'B'</div>
+                    <div class="stop-code">569</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Progress Drive Shops - Nightcliff</div>
+                    <div class="stop-code">86</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Woolner Road</div>
+                    <div class="stop-code">173</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Parap Road - Stuart Highway</div>
+                    <div class="stop-code">174</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Westralia Street</div>
+                    <div class="stop-code">175</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Kerry Mazda</div>
+                    <div class="stop-code">176</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Daly Street</div>
+                    <div class="stop-code">177</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Ducks Nuts</div>
+                    <div class="stop-code">178</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Hilton Hotel</div>
+                    <div class="stop-code">179</div>
+                  </th>
+                  <th class="stop-header" scope="col" width="4.35%">
+                    <div class="stop-name">Darwin Interchange</div>
+                    <div class="stop-code">69</div>
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="trip-row" id="trip_id_66391">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">8:10am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66427">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">8:45am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66463">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">9:50am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66499">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time am"><span class="stop-time-text">10:55am</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66535">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">12:00pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66571">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">1:05pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66607">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">2:10pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66643">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">3:15pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66679">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">4:20pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66715">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">5:25pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66751">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">6:30pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                <tr class="trip-row" id="trip_id_66787">
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time pm"><span class="stop-time-text">7:35pm</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                  <td class="stop-time skipped"><span class="stop-time-text"></span><span class="symbol">—</span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <div class="row timetable-bottom"></div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

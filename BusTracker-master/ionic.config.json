@@ -1,0 +1,7 @@
+{
+  "name": "NTbus",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
